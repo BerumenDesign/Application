@@ -1,0 +1,97 @@
+.RFIcard {
+    ul#collapsing-tabs {
+        border: none;
+        background: none;
+    }
+    /* This is the style for the top-bar*/
+    .top-bar,
+    .top-bar ul {
+        background: $white;
+        font-weight: bold;
+        padding-bottom: 0;
+    }
+    .top-bar a {
+        color: $primary-color !important;
+    }
+    a.success.button {
+        color: $white !important;
+    }
+    .card-group-tabs {
+        .button {
+            margin-right: 10px;
+        }
+        .card-tabs .tabs a:hover,
+        .card-tabs .tabs .is-active a {
+            color: $white !important;
+        }
+        .tabs-title.is-active.button.success {
+            color: $white !important;
+        }
+    }
+    .tabs-content {
+        border: none;
+    }
+    .card-tabs {
+        .card-divider {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 20px;
+            margin: 0;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin-bottom: 0;
+            }
+            .fa {
+                position: relative;
+                margin-right: 0;
+            }
+        }
+        .tabs,
+        .tabs a {
+            background: none !important;
+            border: none !important;
+        }
+        .tabs a {
+            padding: 0;
+            margin: 0 10px;
+            font-size: 13px;
+            color: lighten($body-font-color, 50%);
+        }
+        .tabs a:hover,
+        .tabs .is-active a {
+            color: $white;
+        }
+        .tabs-panel {
+            padding: 0;
+        }
+        .menu {
+            border: none;
+        }
+    }
+    .card-divider {
+        padding: 0 !important;
+        border-bottom: 1px solid lighten($primary-color, 10%);
+        .tabs-title a {
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: .95em;
+            background: none !important;
+        }
+        .tabs-title a:hover {
+            background: none;
+        }
+        .tabs-title > a:focus,
+        .tabs-title > a[aria-selected='true'] {
+            background: none;
+            border-bottom: 3px solid lighten($primary-color, 10%);
+        }
+    }
+    li {
+        text-decoration: none;
+    }
+}

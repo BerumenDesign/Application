@@ -1,0 +1,64 @@
+<div class="large reveal" id="formModal" data-reveal>
+    <div class="top-bar fixed">
+        <div class="top-bar-left"><a class="button primary">Request</a></div>
+        <div class="top-bar-right"><a href="#" class="button secondary clear"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
+            <button class="button clear close-form" data-close aria-label="Close modal" type="button"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+    </div>
+    <div class="inside-modal">{{> breadcrumbs}}
+        <header>
+            <h3>Request for information</h3>
+            <p>by Tim Williams / Jul 21, 2017 13:01</p>
+        </header>
+        <form>
+            <div class="grid-x grid-padding-x">
+                <div class="small-12 medium-6 cell">
+                    <label>Title
+                        <input type="text" placeholder="RFI title"> </label>
+                    <label>Plant
+                        <input type="text" placeholder="Plant"> </label>
+                    <label>Discipline
+                        <input type="text" placeholder="Discipline"> </label>
+                    <label>Tag
+                        <input type="text" placeholder="Tag"> </label>
+                    <label>RFI number
+                        <input disabled type="text" placeholder="RFI number"> </label>
+                </div>
+                <div class="small-12 medium-6 cell">
+                    <label>Assigned to
+                        <input disabled type="text" placeholder="RFI number"> </label>
+                    <label>Select Menu
+                        <select>
+                            <option value="high-priority"><i class="fa fa-circle alert" aria-hidden="true"></i> High Priority</option>
+                            <option value="low-priority"><i class="fa fa-circle warning" aria-hidden="true"></i> Medium Priority</option>
+                        </select>
+                    </label>
+                    <label>Justify priority
+                        <textarea name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
+                    </label>
+                </div>
+                <div class="small-12 medium-12 cell">
+                    <label>Describe problem or requested info
+                        <textarea name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
+                    </label>
+                    <label>Describe recomendation, proposal or suggested mitigation
+                        <textarea name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
+                    </label>
+                </div>
+                <div class="small-12 medium-6 cell">
+                    <label>Upload reference document
+                        <div class="upload-dropzone"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Drop files here or click to select files</div>
+                    </label>
+                </div>
+                <div class="small-12 medium-6 cell">
+                    <label>Uploaded document
+                        <div class="uploaded-docs"> <a class="button clear secondary">RFI-33323232-3.pdf <i class="fa fa-trash" aria-hidden="true"></i></a> </div>
+                    </label>
+                </div>
+                <div class="small-12 cell end-form">
+                    <div class="button-group"> <a class="hollow secondary button">Cancel</a> <a class="success button">Submit RFI</a> </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

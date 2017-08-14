@@ -1,0 +1,12 @@
+{{> topbar}}
+<div class="off-canvas-wrapper">
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas> {{> off_canvas_left}}
+        <button class="close-button" aria-label="Close menu" type="button" data-close> <span aria-hidden="true">&times;</span> </button>
+    </div>
+    <div class="off-canvas-content" data-off-canvas-content>
+        <div class="grid-x ">
+            <div class="hide-for-small-only medium-4 large-3 cell side-panel-rfi"> {{> accordion}} </div>
+            <div class="small-12 medium-8 large-9 cell main-panel-rfi">{{> secondbar}} {{> card_rfi}} </div>
+        </div>
+    </div>
+</div> {{> footer}}

@@ -1,0 +1,85 @@
+.top-bar {
+    .logo {
+        display: block;
+        background: $dark-gray;
+        margin: 20px;
+        padding: 0 20px;
+    }
+    a {
+        color: $white !important;
+        font-size: .85em;
+    }
+    .is-dropdown-submenu {
+        background: $white;
+        color: darken($primary-color, 25%);
+        a {
+            color: $primary-color !important;
+        }
+    }
+}
+
+.second-bar {
+    margin: 20px 20px 5px 20px;
+    h6 {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    i {
+        line-height: 2em;
+    }
+}
+
+.search {
+    max-width: 300px;
+    background: red;
+}
+
+.main-panel-rfi {
+    background: lighten($primary-color, 53%);
+    padding: 20px;
+    .breadcrumbs {
+        margin-left: 20px;
+    }
+    .RFIcard {
+        background: $white;
+    }
+}
+
+.side-panel-rfi {
+    background: darken($primary-color, 25%);
+    padding: 10px 0;
+    header {
+        color: $white !important;
+    }
+}
+
+.marketing-site-footer {
+    text-align: left;
+}
+
+.nav-footer {
+    background: darken($primary-color, 35%);
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    li {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 30px;
+    }
+    p {
+        color: darken($primary-color, 10%);
+        padding: 10px;
+    }
+}
+
+.tabs-title {
+    font-weight: bold;
+    .success.button,
+    .tabs .is-active a,
+    .button.success {
+        color: $white !important;
+    }
+}
