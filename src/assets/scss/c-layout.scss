@@ -1,13 +1,22 @@
 .top-bar {
     .logo {
         display: block;
-        background: $dark-gray;
+        background: darken($primary-color, 10%);
         margin: 20px;
         padding: 0 20px;
     }
+    h5 {
+        line-height: 72px;
+        font-weight: bold;
+        color: $white;
+    }
     a {
         color: $white !important;
-        font-size: .85em;
+        font-size: 1em;
+        font-size: calc(14px);
+    }
+    .button {
+        height: 37px;
     }
     .is-dropdown-submenu {
         background: $white;
@@ -16,10 +25,13 @@
             color: $primary-color !important;
         }
     }
+    .right {
+        padding-right: 20px;
+    }
 }
 
 .second-bar {
-    margin: 20px 20px 5px 20px;
+    margin: 10px;
     h6 {
         font-weight: bold;
         font-size: 1.5em;
@@ -36,7 +48,7 @@
 
 .main-panel-rfi {
     background: lighten($primary-color, 53%);
-    padding: 20px;
+    padding: 20px 20px;
     .breadcrumbs {
         margin-left: 20px;
     }
@@ -46,7 +58,7 @@
 }
 
 .side-panel-rfi {
-    background: darken($primary-color, 25%);
+    background: darken($primary-color, 35%);
     padding: 10px 0;
     header {
         color: $white !important;
@@ -61,17 +73,19 @@
     background: darken($primary-color, 35%);
     display: block;
     text-align: center;
-    padding-top: 30px;
+    padding: 10px 0 5px;
     width: 100%;
+    a {
+        font-size: calc(14px);
+    }
     li {
         display: inline-block;
         text-decoration: none;
         text-align: center;
         padding: 10px 30px;
     }
-    p {
+    .copyright {
         color: darken($primary-color, 10%);
-        padding: 10px;
     }
 }
 
@@ -82,4 +96,53 @@
     .button.success {
         color: $white !important;
     }
+}
+
+.inside-form {
+    margin-left: -48px;
+}
+
+.right {
+    float: right;
+}
+
+.alert {
+    color: $alert-color;
+}
+
+.warning {
+    color: $warning-color;
+}
+
+.success {
+    color: $success-color;
+}
+
+.white {
+    color: $white !important;
+}
+
+.table-scroll {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 460px;
+    table {
+        width: 100% !important;
+        .button {
+        display: inline-block;
+        font-size: 14px !important;
+        margin: 0;
+    }
+    th {
+        font-size: .8em;
+    }
+    td {
+        padding: 0 5px;
+        text-align: center;
+    }
+    .td-tool {
+        min-width: 120px;
+    }
+    }
+    
 }

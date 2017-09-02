@@ -1,97 +1,92 @@
 .RFIcard {
+    padding: $global-padding;
     ul#collapsing-tabs {
         border: none;
         background: none;
     }
-    /* This is the style for the top-bar*/
-    .top-bar,
-    .top-bar ul {
+    .button {
+        font-size: .85em;
+    }
+    .tabs-title a {
+        padding: 10px 20px;
+        margin-right: 5px;
+    }
+    .tabs-title > a:focus,
+    .tabs-title > a[aria-selected='true'] {
         background: $white;
-        font-weight: bold;
-        padding-bottom: 0;
+        border-bottom: 2px solid lighten($primary-color, 10%);
     }
-    .top-bar a {
-        color: $primary-color !important;
+    #tab-responded .tabs-title a[aria-selected='true'] {
+        background: $success-color;
+        color: $white;
+        border-bottom: none;
     }
-    a.success.button {
-        color: $white !important;
+    #tab-open .tabs-title a[aria-selected='true'] {
+        background: $warning-color;
+        color: $white;
+        border-bottom: none;
     }
-    .card-group-tabs {
-        .button {
-            margin-right: 10px;
-        }
-        .card-tabs .tabs a:hover,
-        .card-tabs .tabs .is-active a {
-            color: $white !important;
-        }
-        .tabs-title.is-active.button.success {
-            color: $white !important;
-        }
+    #tab-overdue .tabs-title a[aria-selected='true'] {
+        background: $alert-color;
+        color: $white;
+        border-bottom: none;
     }
     .tabs-content {
+        padding: 0;
+        margin: 0;
         border: none;
-    }
-    .card-tabs {
-        .card-divider {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 5px 20px;
-            margin: 0;
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                margin-bottom: 0;
+        border-top: 1px solid lighten($primary-color, 10%);
+        .success-tab {
+            background: $light-gray;
+            color: $medium-gray;
+            border-radius: 4px;
+            &:focus,
+            {
+                background: $success-color;
+                color: $white;
             }
-            .fa {
-                position: relative;
-                margin-right: 0;
+            &:a[aria-selected='true'] {
+                background: $success-color;
+                color: $white;
             }
         }
-        .tabs,
-        .tabs a {
-            background: none !important;
-            border: none !important;
+        .warning-tab {
+            background: $light-gray;
+            color: $medium-gray;
+            border-radius: 4px;
+            &:focus {
+                background: $warning-color;
+                color: $white;
+            }
         }
-        .tabs a {
-            padding: 0;
-            margin: 0 10px;
-            font-size: 13px;
-            color: lighten($body-font-color, 50%);
+        .alert-tab {
+            background: $light-gray;
+            color: $medium-gray;
+            border-radius: 4px;
+            &:focus {
+                background: $alert-color;
+                color: $white;
+            }
         }
-        .tabs a:hover,
-        .tabs .is-active a {
+        .success-tab a[aria-selected='true'] {
+            background: $success-color;
             color: $white;
         }
+
         .tabs-panel {
-            padding: 0;
+            padding: 5px 0 0 0;
+            .tabs-content {
+                border: none;
+            }
         }
-        .menu {
+        table thead {
+            color: $dark-gray;
+            background: $white;
+            font-size: .8em;
             border: none;
         }
-    }
-    .card-divider {
-        padding: 0 !important;
-        border-bottom: 1px solid lighten($primary-color, 10%);
-        .tabs-title a {
-            padding: 10px 20px;
-            margin-right: 10px;
-            font-size: .95em;
-            background: none !important;
+        td {
+            font-size: 12px;
         }
-        .tabs-title a:hover {
-            background: none;
-        }
-        .tabs-title > a:focus,
-        .tabs-title > a[aria-selected='true'] {
-            background: none;
-            border-bottom: 3px solid lighten($primary-color, 10%);
-        }
-    }
-    li {
-        text-decoration: none;
     }
 }

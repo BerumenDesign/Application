@@ -1,9 +1,6 @@
 <div class="accordionRFI">
-    <header>
-        <label>Projects by company</label>
-    </header>
     <div class="grid-x all-projects">
-        <div class="small-6">All</div>
+        <div class="small-6">All projects</div>
         <div class="small-2 success"><i class="fa fa-flag" aria-hidden="true"></i></div>
         <div class="small-2 warning"><i class="fa fa-flag" aria-hidden="true"></i></div>
         <div class="small-2 alert"><i class="fa fa-flag" aria-hidden="true"></i></div>
@@ -12,19 +9,23 @@
         <li class="accordion-item is-active" data-accordion-item>
             <a href="#deeplink1" class="accordion-title">
                 <div class="grid-x">
-                    <div class="small-6 ">Company 1</div>
-                    <div class="small-2 ">1</div>
-                    <div class="small-2 warning">4</div>
-                    <div class="small-2 alert">3</div>
+                    <div class="small-6">Company 1</div>
+                    <div class="auto cell">1</div>
+                    <div class="auto cell">4</div>
+                    <div class="auto cell">
+                        <div class="has-action">1</div>
+                    </div>
                 </div>
             </a>
-            <div class="accordion-content" data-tab-content id="Project1">
-                <a class="is-active focus">
+            <div class="accordion-content is-active" data-tab-content id="Project1">
+                <a>
                     <div class="grid-x">
                         <div class="small-6">Project 1</div>
-                        <div class="small-2">3</div>
-                        <div class="small-2 warning">4</div>
-                        <div class="small-2 alert">3</div>
+                        <div class="auto cell">0</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">
+                            <div class="has-action">1</div>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -32,19 +33,19 @@
                 <a>
                     <div class="grid-x">
                         <div class="small-6">Project 2</div>
-                        <div class="small-2">3</div>
-                        <div class="small-2 warning">4</div>
-                        <div class="small-2 alert">3</div>
+                        <div class="auto cell">0</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
                     </div>
                 </a>
             </div>
             <div class="accordion-content" data-tab-content id="Project1">
                 <a>
                     <div class="grid-x">
-                        <div class="small-6">Project 3</div>
-                        <div class="small-2">3</div>
-                        <div class="small-2 warning">4</div>
-                        <div class="small-2 alert">3</div>
+                        <div class="small-6">Project 0</div>
+                        <div class="auto cell">0</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
                     </div>
                 </a>
             </div>
@@ -53,18 +54,18 @@
             <a href="#deeplink2" class="accordion-title">
                 <div class="grid-x">
                     <div class="small-6 ">Company 2</div>
-                    <div class="small-2 ">1</div>
-                    <div class="small-2 warning">4</div>
-                    <div class="small-2 alert">3</div>
+                    <div class="auto cell">1</div>
+                    <div class="auto cell">4</div>
+                    <div class="auto cell">0</div>
                 </div>
             </a>
             <div class="accordion-content" data-tab-content id="Project1">
                 <a>
                     <div class="grid-x">
                         <div class="small-6">Project 1</div>
-                        <div class="small-2">3</div>
-                        <div class="small-2 warning">4</div>
-                        <div class="small-2 alert">3</div>
+                        <div class="auto cell">2</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
                     </div>
                 </a>
             </div>
@@ -72,9 +73,9 @@
                 <a>
                     <div class="grid-x ">
                         <div class="small-6">Project 1</div>
-                        <div class="small-2">3</div>
-                        <div class="small-2 warning">4</div>
-                        <div class="small-2 alert">3</div>
+                        <div class="auto cell">2</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
                     </div>
                 </a>
             </div>
@@ -82,9 +83,9 @@
                 <a>
                     <div class="grid-x">
                         <div class="small-6">Project 1</div>
-                        <div class="small-2">3</div>
-                        <div class="small-2 warning">4</div>
-                        <div class="small-2 alert">3</div>
+                        <div class="auto cell">5</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
                     </div>
                 </a>
             </div>
@@ -92,39 +93,43 @@
         <li class="accordion-item" data-accordion-item>
             <a href="#deeplink2" class="accordion-title">
                 <div class="grid-x">
-                    <div class="small-6 ">Company 3</div>
-                    <div class="small-2 ">1</div>
-                    <div class="small-2 warning">4</div>
-                    <div class="small-2 alert">3</div>
+                    <div class="small-6 cell">Company 3</div>
+                    <div class="auto cell">11</div>
+                    <div class="auto cell">4</div>
+                    <div class="auto cell">
+                        <div class="has-action">1</div>
+                    </div>
                 </div>
             </a>
             <div class="accordion-content" data-tab-content id="Project1">
                 <a>
                     <div class="grid-x">
-                        <div class="small-6">Project 1</div>
-                        <div class="small-2">3</div>
-                        <div class="small-2 warning">4</div>
-                        <div class="small-2 alert">3</div>
+                        <div class="small-6 cell">Project 1</div>
+                        <div class="auto cell">10</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
                     </div>
                 </a>
             </div>
             <div class="accordion-content" data-tab-content id="Project1">
                 <a>
                     <div class="grid-x">
-                        <div class="small-6">Project 1</div>
-                        <div class="small-2">3</div>
-                        <div class="small-2 warning">4</div>
-                        <div class="small-2 alert">3</div>
+                        <div class="small-6 cell">Project 1</div>
+                        <div class="auto cell">1</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
                     </div>
                 </a>
             </div>
             <div class="accordion-content" data-tab-content id="Project1">
                 <a>
                     <div class="grid-x">
-                        <div class="small-6">Project 1</div>
-                        <div class="small-2">3</div>
-                        <div class="small-2 warning">4</div>
-                        <div class="small-2 alert">3</div>
+                        <div class="small-6 cell">Project 1</div>
+                        <div class="auto cell">3</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">
+                            <div class="has-action">1</div>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -133,5 +138,5 @@
     <div class="grid-x">
         <header>
             <label>RFI Outstanding actions tracker</label>
-        </header><a href="#" class="small-12 wait-response">Actions<span class="badge">6</span></a> <a href="#" class="small-12 wait-confirmation">Action confirmations<span class="badge">6</span></a></div>
+        </header><a href="#" class="button expanded wait-response">Actions<span class="has-action">6</span></a> <a href="#" class="button expanded wait-confirmation">Action confirmations<span class="has-action">6</span></a></div>
 </div>

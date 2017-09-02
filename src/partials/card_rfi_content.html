@@ -1,15 +1,19 @@
 <div id="RFIpanel">
     <ul class="card-group-tabs tabs" data-tabs id="collapsing-tabs">
-        <li class="tabs-title is-active button success"><a href="#panelResponded" aria-selected="true"><i class="fa fa-flag" aria-hidden="true"></i> Responded <span class="RFInumber">3</span></a></li>
-        <li class="tabs-title button warning"><a href="#panelOpen"><i class="fa fa-flag" aria-hidden="true"></i> Open <span class="RFInumber">3</span></a></li>
-        <li class="tabs-title button alert"><a href="#panelOverdue"><i class="fa fa-flag" aria-hidden="true"></i> Overdue <span class="RFInumber">3</span></a></li>
+        <div id="tab-responded">
+            <li class="tabs-title is-active "><a href="#panelResponded" aria-selected="true" class="success-tab"><i class="fa fa-flag" aria-hidden="true"></i> Responded <span class="RFInumber">3</span></a></li>
+        </div>
+        <div id="tab-open">
+            <li class="tabs-title"><a href="#panelOpen" class="warning-tab"><i class="fa fa-flag" aria-hidden="true"></i> Open <span class="RFInumber">3</span></a></li>
+        </div>
+        <div id="tab-overdue">
+            <li class="tabs-title"><a href="#panelOverdue" class="alert-tab"><i class="fa fa-flag" aria-hidden="true"></i> Overdue <span class="RFInumber">3</span></a></li>
+        </div>
+        <li class="right"><a href="#" class="primary clear button right"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email RFI</a> </li>
     </ul>
     <div class="tabs-content" data-tabs-content="collapsing-tabs">
-        <div class="tabs-panel is-active" id="panelResponded">
-            <h4>Responded RFIs</h4> {{> ag-chart}}</div>
-        <div class="tabs-panel" id="panelOpen">
-            <h4>Open RFIs</h4> {{> ag-chart}} </div>
-        <div class="tabs-panel" id="panelOverdue">
-            <h4>Overdue RFIs</h4> {{> ag-chart}} </div>
+        <div class="tabs-panel is-active" id="panelResponded"> {{> RFI-grid}}</div>
+        <div class="tabs-panel" id="panelOpen"> {{> RFI-grid}} </div>
+        <div class="tabs-panel" id="panelOverdue"> {{> RFI-grid}} </div>
     </div>
 </div>

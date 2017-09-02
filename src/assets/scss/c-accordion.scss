@@ -1,103 +1,84 @@
-                    .accordionRFI {
-                        margin: 0 3px;
-                        font-size: 14px;
-                        max-width: 600px;
-                        .wait-response,
-                        .wait-confirmation,
-                        .all-projects {
-                            color: $white;
-                            font-weight: bolder;
-                            padding: $global-menu-padding;
-                            background: darken($primary-color, 28);
-                            border-bottom: 1px solid darken($primary-color, 26);
-                            .badge {
-                                float: right;
-                                margin-right: 10px;
-                                font-size: 12px;
-                                background: darken($alert-color, 20);
-                            }
-                            .wait-response:hover,
-                            .wait-confirmation:hover,
-                            .all-projects:hover {
-                                background: darken($primary-color, 30);
-                            }
-                        }
-                        .wait-response,
-                        .wait-confirmation {
-                            margin: 2px;
-                            border-radius: 2px;
-                            color: lighten($primary-color, 28);
-                        }
-                        .all-projects {
-                            background: darken($primary-color, 24);
-                        }
-                        label {
-                            color: $medium-gray;
-                            font-weight: bolder;
-                            font-size: .82em;
-                            font-weight: light;
-                        }
-                        li {
-                            font-size: 14px;
-                        }
-                        a:active,
-                        a:hover,
-                        a:focus {
-                            color: $white;
-                        }
-                        .accordion-title {
-                            color: lighten($primary-color, 22);
-                            background: darken($primary-color, 24);
-                            border: none;
-                            font-weight: bold;
-                        }
-                        .accordion-title:hover {
-                            color: $white;
-                            background: darken($primary-color, 22);
-                            border: none;
-                            font-weight: bold;
-                        }
-                        .accordion-title:focus {
-                            color: $white;
-                            background: darken($primary-color, 20);
-                            border: none;
-                        }
-                        .accordion-content {
-                            background: darken($primary-color, 32);
-                            color: $white;
-                            font-weight: bold;
-                            font-size: 1em;
-                            text-indent: 15px;
-                            border: none;
-                        }
-                        .accordion-content:hover,
-                        .accordion-content:focus {
-                            background: darken($primary-color, 27);
-                            color: $white;
-                            font-size: 1em;
-                            text-indent: 15px;
-                            border: none;
-                        }
-                        label {
-                            padding: $global-menu-padding;
-                        }
-                        .accordion-item {
-                            color: $white;
-                            background: darken($primary-color, 20);
-                            border: none;
-                            border-bottom: 1px solid darken($primary-color, 20);
-                        }
-                        :last-child:focus(.is-active) > .accordion-title {
-                            border-bottom: none;
-                            border-radius: 0 0 0 0;
-                        }
-                        .alert {
-                            color: $alert-color;
-                        }
-                        .warning {
-                            color: $warning-color;
-                        }
-                        .success {
-                            color: $success-color;
-                        }
-                    }
+.accordionRFI {
+    margin: 0 3px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: .5em;
+    label {
+        color: $medium-gray;
+        font-weight: bold;
+        font-size: .9em;
+    }
+    li {
+        line-height: .5em;
+    }
+    .wait-response,
+    .wait-confirmation,
+    .all-projects {
+        color: lighten($primary-color, 34);
+        text-align: left;
+        font-weight: bold;
+        padding: $global-menu-padding;
+        background: darken($primary-color, 40);
+        border-bottom: 1px solid darken($primary-color, 36);
+        margin: 2px;
+    }
+    .accordion-item {
+        color: $white;
+        background: darken($primary-color, 30);
+        border: none;
+        border-bottom: 1px solid darken($primary-color, 20);
+    }
+    .accordion-content {
+        background: darken($primary-color, 25);
+        color: $white;
+        font-size: 1em;
+        padding-left: 20px;
+        border: none;
+        &:hover {
+            color: lighten($primary-color, 22);
+            background: darken($primary-color, 25);
+        }
+        &:focus {
+            color: lighten($primary-color, 22);
+            background: darken($primary-color, 25);
+        }
+        a {
+            color: lighten($primary-color, 34);
+        }
+    }
+    .accordion-title {
+        color: lighten($primary-color, 34);
+        background: darken($primary-color, 35);
+        border: none;
+        font-weight: bold;
+        &:hover {
+            color: lighten($primary-color, 22);
+            background: darken($primary-color, 25);
+        }
+        &:focus {
+            color: lighten($primary-color, 22);
+            background: darken($primary-color, 25);
+        }
+    }
+    .has-action {
+        display: inline;
+        margin-right: 5px;
+        font-size: 12px;
+        background: darken($alert-color, 20);
+        color: $white;
+        text-align: center !important;
+        border-radius: 6px;
+        width: 24px;
+        font-weight: bold;
+        padding: 4px 10px;
+    }
+    .wait-response,
+    .wait-confirmation {
+        .has-action {
+            float: right;
+        }
+    }
+    .is-active {
+        background: darken($primary-color, 15);
+    }
+}
