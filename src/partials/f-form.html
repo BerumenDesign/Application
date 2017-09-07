@@ -1,0 +1,57 @@
+<form>
+    <div class="grid-x grid-padding-x">
+        <label class="small-12 cell">Title
+            <input type="text" placeholder="RFI title"> </label>
+        <label class="small-4 cell">Plant
+            <select>
+                <option value="" class="secondary">Select </option>
+                <option value="discipline1">Plant 1</option>
+                <option value="discipline2">Plant 2</option>
+                <option value="discipline3">Plant 3</option>
+            </select>
+        </label>
+        <label class="small-4 cell">Discipline
+            <select>
+                <option value="" class="secondary">Select</option>
+                <option value="discipline1">Discipline 1</option>
+                <option value="discipline2">Discipline 2</option>
+                <option value="discipline3">Discipline 3</option>
+            </select>
+        </label>
+        <label class="small-4 cell">Tag
+            <input type="text" placeholder="Tag"> </label>
+        <label class="small-4 cell">RFI number
+            <input disabled type="text" placeholder="123-456"> </label>
+        <label class="small-4 cell">Assigned to
+            <input disabled type="text" placeholder="John Smith"> </label>
+        <label class="small-12 cell">Describe problem or requested info
+            <textarea name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
+        </label>
+        <label class="small-12 cell">Describe recomendation, proposal or suggested mitigation
+            <textarea name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
+        </label>
+        <label class="small-4 cell">Priority
+            <select>
+                <option value="high-priority"><i class="fa fa-circle alert" aria-hidden="true"></i> High Priority</option>
+                <option value="low-priority"><i class="fa fa-circle warning" aria-hidden="true"></i> Medium Priority</option>
+            </select>
+        </label>
+        <label class="small-8 cell">Justify priority
+            <textarea name="Text1" cols="40" rows="3" placeholder="Enter comment"></textarea>
+        </label>
+        <div class="small-6 cell">
+            <label>Upload reference document
+                <div class="upload-dropzone"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Drop files here
+                    <br>or click to select files</div>
+            </label>
+        </div>
+        <div class="small-6 cell">
+            <label>Uploaded document
+                <div class="uploaded-docs"> <a class="button clear secondary">RFI-33323232-3.pdf <i class="fa fa-trash" aria-hidden="true"></i></a> </div>
+            </label>
+        </div>
+        <div class="small-12cell end-form">
+            <div class="button-group"> <a class="hollow secondary button">Cancel</a> <a class="success button">Submit RFI</a> </div>
+        </div>
+    </div>
+</form>

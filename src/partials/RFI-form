@@ -1,0 +1,14 @@
+<div class="RFIcard">
+    <div class="card-header"> {{> RFIcard-header}}</div>
+    <ul class="tabs menu" data-active-collapse="true" data-tabs id="collapsing-tabs">
+        <li class="tabs-title is-active"><a href="#panelRFI" aria-selected="true">
+           RFIs</a></li>
+        <li class="tabs-title">
+            <a href="#panelKPI"> <i class="fa fa-cog" aria-hidden="true"></i> KPI metrics </a>
+        </li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel is-active" id="panelRFI"> {{> card_rfi_content}} </div>
+        <div class="tabs-panel" id="panelKPI"> {{> KPI-content}} </div>
+    </div>
+</div> {{> Modal-NewRFI}}

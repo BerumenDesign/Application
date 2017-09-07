@@ -12,334 +12,328 @@
     <script type="text/javascript" src="https://cdn.datatables.net/v/zf/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.4.0/b-colvis-1.4.0/b-html5-1.4.0/b-print-1.4.0/cr-1.3.3/fc-3.2.2/fh-3.1.2/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
     <link rel="stylesheet" href="assets/css/app.css"> </head>
 
-<body>
-    <div class="fixed">
-        <nav class="top-bar" id="admin-menu">
-            <button class="button secondary show-for-small-only" data-toggle="offCanvas"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            <nav class="top-bar-left">
-                <ul class="menu">
-                    <li>
-                        <div class="logo"> <a href="">Logo</a> </div>
-                    </li>
-                    <li>
-                        <h5>RFI Dashboard</h5></li>
-                </ul>
-            </nav>
-            <div class=" right">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li>
-                        <div class="input-group input-group-rounded">
-                            <input class="input-group-field search" type="search" placeholder="Search">
-                            <div class="input-group-button"> <a type="submit" class="inside-form button primary"><i class="fa fa-search" aria-hidden="true"></i></a></div>
-                        </div>
-                    </li>
-                    <li><a href="#0"><i class="fa fa-question-circle" aria-hidden="true"></i> <span class="hide-for-small-only">Help</span></a></li>
-                    <li class="has-submenu"> <a href="#0"><i class="fa fa-user-circle-o" aria-hidden="true"></i> <span class="hide-for-small-only">John Smith </span></a>
-                        <ul class="submenu menu vertical" data-submenu>
-                            <li><a href="#0">My Profile</a></li>
-                            <li><a href="#0">Settings</a></li>
-                            <li><a href="#0">My Team</a></li>
-                            <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+<body>  <div class="fixed">
+    <nav class="top-bar" id="admin-menu">
+        <button class="button secondary show-for-small-only" data-toggle="offCanvas"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <nav class="top-bar-left">
+            <ul class="menu">
+                <li>
+                    <div class="logo"> <a href="">Logo</a> </div>
+                </li>
+                <li>
+                    <h5>RFI Dashboard</h5></li>
+            </ul>
         </nav>
-    </div>
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas position-left" id="offCanvas" data-off-canvas> Logo
-            <div class="accordionRFI">
-                <div class="grid-x all-projects">
-                    <div class="small-6">All projects</div>
-                    <div class="small-2 success"><i class="fa fa-flag" aria-hidden="true"></i></div>
-                    <div class="small-2 warning"><i class="fa fa-flag" aria-hidden="true"></i></div>
-                    <div class="small-2 alert"><i class="fa fa-flag" aria-hidden="true"></i></div>
-                </div>
-                <ul class="accordion" data-accordion data-allow-all-closed="true" id="RFI-accordion">
-                    <li class="accordion-item is-active" data-accordion-item>
-                        <a href="#deeplink1" class="accordion-title">
-                            <div class="grid-x">
-                                <div class="small-6">Company 1</div>
-                                <div class="auto cell">1</div>
-                                <div class="auto cell">4</div>
-                                <div class="auto cell">
-                                    <div class="has-action">1</div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="accordion-content is-active" data-tab-content id="Project1">
-                            <a>
-                                <div class="grid-x">
-                                    <div class="small-6">Project 1</div>
-                                    <div class="auto cell">0</div>
-                                    <div class="auto cell">4</div>
-                                    <div class="auto cell">
-                                        <div class="has-action">1</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="accordion-content" data-tab-content id="Project1">
-                            <a>
-                                <div class="grid-x">
-                                    <div class="small-6">Project 2</div>
-                                    <div class="auto cell">0</div>
-                                    <div class="auto cell">4</div>
-                                    <div class="auto cell">0</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="accordion-content" data-tab-content id="Project1">
-                            <a>
-                                <div class="grid-x">
-                                    <div class="small-6">Project 0</div>
-                                    <div class="auto cell">0</div>
-                                    <div class="auto cell">4</div>
-                                    <div class="auto cell">0</div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="accordion-item" data-accordion-item>
-                        <a href="#deeplink2" class="accordion-title">
-                            <div class="grid-x">
-                                <div class="small-6 ">Company 2</div>
-                                <div class="auto cell">1</div>
-                                <div class="auto cell">4</div>
-                                <div class="auto cell">0</div>
-                            </div>
-                        </a>
-                        <div class="accordion-content" data-tab-content id="Project1">
-                            <a>
-                                <div class="grid-x">
-                                    <div class="small-6">Project 1</div>
-                                    <div class="auto cell">2</div>
-                                    <div class="auto cell">4</div>
-                                    <div class="auto cell">0</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="accordion-content" data-tab-content id="Project1">
-                            <a>
-                                <div class="grid-x ">
-                                    <div class="small-6">Project 1</div>
-                                    <div class="auto cell">2</div>
-                                    <div class="auto cell">4</div>
-                                    <div class="auto cell">0</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="accordion-content" data-tab-content id="Project1">
-                            <a>
-                                <div class="grid-x">
-                                    <div class="small-6">Project 1</div>
-                                    <div class="auto cell">5</div>
-                                    <div class="auto cell">4</div>
-                                    <div class="auto cell">0</div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="accordion-item" data-accordion-item>
-                        <a href="#deeplink2" class="accordion-title">
-                            <div class="grid-x">
-                                <div class="small-6 cell">Company 3</div>
-                                <div class="auto cell">11</div>
-                                <div class="auto cell">4</div>
-                                <div class="auto cell">
-                                    <div class="has-action">1</div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="accordion-content" data-tab-content id="Project1">
-                            <a>
-                                <div class="grid-x">
-                                    <div class="small-6 cell">Project 1</div>
-                                    <div class="auto cell">10</div>
-                                    <div class="auto cell">4</div>
-                                    <div class="auto cell">0</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="accordion-content" data-tab-content id="Project1">
-                            <a>
-                                <div class="grid-x">
-                                    <div class="small-6 cell">Project 1</div>
-                                    <div class="auto cell">1</div>
-                                    <div class="auto cell">4</div>
-                                    <div class="auto cell">0</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="accordion-content" data-tab-content id="Project1">
-                            <a>
-                                <div class="grid-x">
-                                    <div class="small-6 cell">Project 1</div>
-                                    <div class="auto cell">3</div>
-                                    <div class="auto cell">4</div>
-                                    <div class="auto cell">
-                                        <div class="has-action">1</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="grid-x">
-                    <header>
-                        <label>RFI Outstanding actions tracker</label>
-                    </header><a href="#" class="button expanded wait-response">Actions<span class="has-action">6</span></a> <a href="#" class="button expanded wait-confirmation">Action confirmations<span class="has-action">6</span></a></div>
-            </div>
-            <button class="close-button" aria-label="Close menu" type="button" data-close> <span aria-hidden="true">&times;</span> </button>
+        <div class=" right">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li>
+                    <div class="input-group input-group-rounded">
+                        <input class="input-group-field search" type="search" placeholder="Search">
+                        <div class="input-group-button"> <a type="submit" class="inside-form button primary"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                    </div>
+                </li>
+                <li><a href="#0"><i class="fa fa-question-circle" aria-hidden="true"></i> <span class="hide-for-small-only">Help</span></a></li>
+                <li class="has-submenu"> <a href="#0"><i class="fa fa-user-circle-o" aria-hidden="true"></i> <span class="hide-for-small-only">John Smith </span></a>
+                    <ul class="submenu menu vertical" data-submenu>
+                        <li><a href="#0">My Profile</a></li>
+                        <li><a href="#0">Settings</a></li>
+                        <li><a href="#0">My Team</a></li>
+                        <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <div class="off-canvas-content" data-off-canvas-content>
-            <div class="grid-x ">
-                <div class="hide-for-small-only medium-4 large-3 cell side-panel-rfi">
-                    <div class="accordionRFI">
-                        <div class="grid-x all-projects">
-                            <div class="small-6">All projects</div>
-                            <div class="small-2 success"><i class="fa fa-flag" aria-hidden="true"></i></div>
-                            <div class="small-2 warning"><i class="fa fa-flag" aria-hidden="true"></i></div>
-                            <div class="small-2 alert"><i class="fa fa-flag" aria-hidden="true"></i></div>
-                        </div>
-                        <ul class="accordion" data-accordion data-allow-all-closed="true" id="RFI-accordion">
-                            <li class="accordion-item is-active" data-accordion-item>
-                                <a href="#deeplink1" class="accordion-title">
-                                    <div class="grid-x">
-                                        <div class="small-6">Company 1</div>
-                                        <div class="auto cell">1</div>
-                                        <div class="auto cell">4</div>
-                                        <div class="auto cell">
-                                            <div class="has-action">1</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="accordion-content is-active" data-tab-content id="Project1">
-                                    <a>
-                                        <div class="grid-x">
-                                            <div class="small-6">Project 1</div>
-                                            <div class="auto cell">0</div>
-                                            <div class="auto cell">4</div>
-                                            <div class="auto cell">
-                                                <div class="has-action">1</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="accordion-content" data-tab-content id="Project1">
-                                    <a>
-                                        <div class="grid-x">
-                                            <div class="small-6">Project 2</div>
-                                            <div class="auto cell">0</div>
-                                            <div class="auto cell">4</div>
-                                            <div class="auto cell">0</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="accordion-content" data-tab-content id="Project1">
-                                    <a>
-                                        <div class="grid-x">
-                                            <div class="small-6">Project 0</div>
-                                            <div class="auto cell">0</div>
-                                            <div class="auto cell">4</div>
-                                            <div class="auto cell">0</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#deeplink2" class="accordion-title">
-                                    <div class="grid-x">
-                                        <div class="small-6 ">Company 2</div>
-                                        <div class="auto cell">1</div>
-                                        <div class="auto cell">4</div>
-                                        <div class="auto cell">0</div>
-                                    </div>
-                                </a>
-                                <div class="accordion-content" data-tab-content id="Project1">
-                                    <a>
-                                        <div class="grid-x">
-                                            <div class="small-6">Project 1</div>
-                                            <div class="auto cell">2</div>
-                                            <div class="auto cell">4</div>
-                                            <div class="auto cell">0</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="accordion-content" data-tab-content id="Project1">
-                                    <a>
-                                        <div class="grid-x ">
-                                            <div class="small-6">Project 1</div>
-                                            <div class="auto cell">2</div>
-                                            <div class="auto cell">4</div>
-                                            <div class="auto cell">0</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="accordion-content" data-tab-content id="Project1">
-                                    <a>
-                                        <div class="grid-x">
-                                            <div class="small-6">Project 1</div>
-                                            <div class="auto cell">5</div>
-                                            <div class="auto cell">4</div>
-                                            <div class="auto cell">0</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#deeplink2" class="accordion-title">
-                                    <div class="grid-x">
-                                        <div class="small-6 cell">Company 3</div>
-                                        <div class="auto cell">11</div>
-                                        <div class="auto cell">4</div>
-                                        <div class="auto cell">
-                                            <div class="has-action">1</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="accordion-content" data-tab-content id="Project1">
-                                    <a>
-                                        <div class="grid-x">
-                                            <div class="small-6 cell">Project 1</div>
-                                            <div class="auto cell">10</div>
-                                            <div class="auto cell">4</div>
-                                            <div class="auto cell">0</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="accordion-content" data-tab-content id="Project1">
-                                    <a>
-                                        <div class="grid-x">
-                                            <div class="small-6 cell">Project 1</div>
-                                            <div class="auto cell">1</div>
-                                            <div class="auto cell">4</div>
-                                            <div class="auto cell">0</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="accordion-content" data-tab-content id="Project1">
-                                    <a>
-                                        <div class="grid-x">
-                                            <div class="small-6 cell">Project 1</div>
-                                            <div class="auto cell">3</div>
-                                            <div class="auto cell">4</div>
-                                            <div class="auto cell">
-                                                <div class="has-action">1</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="grid-x">
-                            <header>
-                                <label>RFI Outstanding actions tracker</label>
-                            </header><a href="#" class="button expanded wait-response">Actions<span class="has-action">6</span></a> <a href="#" class="button expanded wait-confirmation">Action confirmations<span class="has-action">6</span></a></div>
+    </nav>
+</div><div class="off-canvas-wrapper">
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas> Logo <div class="accordionRFI">
+    <div class="grid-x all-projects">
+        <div class="small-6">All projects</div>
+        <div class="small-2 success"><i class="fa fa-flag" aria-hidden="true"></i></div>
+        <div class="small-2 warning"><i class="fa fa-flag" aria-hidden="true"></i></div>
+        <div class="small-2 alert"><i class="fa fa-flag" aria-hidden="true"></i></div>
+    </div>
+    <ul class="accordion" data-accordion data-allow-all-closed="true" id="RFI-accordion">
+        <li class="accordion-item is-active" data-accordion-item>
+            <a href="#deeplink1" class="accordion-title">
+                <div class="grid-x">
+                    <div class="small-6">Company 1</div>
+                    <div class="auto cell">1</div>
+                    <div class="auto cell">4</div>
+                    <div class="auto cell">
+                        <div class="has-action">1</div>
                     </div>
                 </div>
-                <div class="small-12 medium-8 large-9 cell main-panel-rfi">
-                    <!--<div class="second-bar grid-x grid-padding-y">
+            </a>
+            <div class="accordion-content is-active" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6">Project 1</div>
+                        <div class="auto cell">0</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">
+                            <div class="has-action">1</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6">Project 2</div>
+                        <div class="auto cell">0</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6">Project 0</div>
+                        <div class="auto cell">0</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+            <a href="#deeplink2" class="accordion-title">
+                <div class="grid-x">
+                    <div class="small-6 ">Company 2</div>
+                    <div class="auto cell">1</div>
+                    <div class="auto cell">4</div>
+                    <div class="auto cell">0</div>
+                </div>
+            </a>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6">Project 1</div>
+                        <div class="auto cell">2</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x ">
+                        <div class="small-6">Project 1</div>
+                        <div class="auto cell">2</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6">Project 1</div>
+                        <div class="auto cell">5</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+            <a href="#deeplink2" class="accordion-title">
+                <div class="grid-x">
+                    <div class="small-6 cell">Company 3</div>
+                    <div class="auto cell">11</div>
+                    <div class="auto cell">4</div>
+                    <div class="auto cell">
+                        <div class="has-action">1</div>
+                    </div>
+                </div>
+            </a>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6 cell">Project 1</div>
+                        <div class="auto cell">10</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6 cell">Project 1</div>
+                        <div class="auto cell">1</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6 cell">Project 1</div>
+                        <div class="auto cell">3</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">
+                            <div class="has-action">1</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+    </ul>
+    <div class="grid-x">
+        <header>
+            <label>RFI Outstanding actions tracker</label>
+        </header><a href="#" class="button expanded wait-response">Actions<span class="has-action">6</span></a> <a href="#" class="button expanded wait-confirmation">Action confirmations<span class="has-action">6</span></a></div>
+</div>
+        <button class="close-button" aria-label="Close menu" type="button" data-close> <span aria-hidden="true">&times;</span> </button>
+    </div>
+    <div class="off-canvas-content" data-off-canvas-content>
+        <div class="grid-x ">
+            <div class="hide-for-small-only medium-4 large-3 cell side-panel-rfi"> <div class="accordionRFI">
+    <div class="grid-x all-projects">
+        <div class="small-6">All projects</div>
+        <div class="small-2 success"><i class="fa fa-flag" aria-hidden="true"></i></div>
+        <div class="small-2 warning"><i class="fa fa-flag" aria-hidden="true"></i></div>
+        <div class="small-2 alert"><i class="fa fa-flag" aria-hidden="true"></i></div>
+    </div>
+    <ul class="accordion" data-accordion data-allow-all-closed="true" id="RFI-accordion">
+        <li class="accordion-item is-active" data-accordion-item>
+            <a href="#deeplink1" class="accordion-title">
+                <div class="grid-x">
+                    <div class="small-6">Company 1</div>
+                    <div class="auto cell">1</div>
+                    <div class="auto cell">4</div>
+                    <div class="auto cell">
+                        <div class="has-action">1</div>
+                    </div>
+                </div>
+            </a>
+            <div class="accordion-content is-active" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6">Project 1</div>
+                        <div class="auto cell">0</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">
+                            <div class="has-action">1</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6">Project 2</div>
+                        <div class="auto cell">0</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6">Project 0</div>
+                        <div class="auto cell">0</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+            <a href="#deeplink2" class="accordion-title">
+                <div class="grid-x">
+                    <div class="small-6 ">Company 2</div>
+                    <div class="auto cell">1</div>
+                    <div class="auto cell">4</div>
+                    <div class="auto cell">0</div>
+                </div>
+            </a>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6">Project 1</div>
+                        <div class="auto cell">2</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x ">
+                        <div class="small-6">Project 1</div>
+                        <div class="auto cell">2</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6">Project 1</div>
+                        <div class="auto cell">5</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+            <a href="#deeplink2" class="accordion-title">
+                <div class="grid-x">
+                    <div class="small-6 cell">Company 3</div>
+                    <div class="auto cell">11</div>
+                    <div class="auto cell">4</div>
+                    <div class="auto cell">
+                        <div class="has-action">1</div>
+                    </div>
+                </div>
+            </a>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6 cell">Project 1</div>
+                        <div class="auto cell">10</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6 cell">Project 1</div>
+                        <div class="auto cell">1</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">0</div>
+                    </div>
+                </a>
+            </div>
+            <div class="accordion-content" data-tab-content id="Project1">
+                <a>
+                    <div class="grid-x">
+                        <div class="small-6 cell">Project 1</div>
+                        <div class="auto cell">3</div>
+                        <div class="auto cell">4</div>
+                        <div class="auto cell">
+                            <div class="has-action">1</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+    </ul>
+    <div class="grid-x">
+        <header>
+            <label>RFI Outstanding actions tracker</label>
+        </header><a href="#" class="button expanded wait-response">Actions<span class="has-action">6</span></a> <a href="#" class="button expanded wait-confirmation">Action confirmations<span class="has-action">6</span></a></div>
+</div> </div>
+            <div class="small-12 medium-8 large-9 cell main-panel-rfi"><!--<div class="second-bar grid-x grid-padding-y">
     <div class="hide-for-small-only medium-4">
         <h6>RFI Dashboard</h6> </div>
     <div class="right small-12 medium-offset-4 medium-4">
@@ -348,855 +342,768 @@
             <div class="input-group-button"> <a type="submit" class="inside-form button clear secondary"><i class="fa fa-search" aria-hidden="true"></i></a></div>
         </div>
     </div>
-</div>-->
-                    <div class="RFIcard">
-                        <div class="card-header">
-                            <div class="grid-x">
-                                <div class="medium-5 cell">
-                                    <div class="top-bar-left">
-                                        <nav aria-label="You are here:" role="navigation">
-                                            <ul class="breadcrumbs">
-                                                <li><a href="#">All projects </a></li>
-                                                <li><a href="#">Company 1</a></li>
-                                                <li> <a href="#">Project 1</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="medium-7 cell">
-                                    <ul class="menu right">
-                                        <li><a href="#" class="secondary clear button"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export log</a></li>
-                                        <li><a href="#" class="secondary clear button"><i class="fa fa-print" aria-hidden="true"></i> Print</a></li>
-                                        <li><a href="#" class=" button small success white" data-toggle="formModal"><i class="fa fa-plus" aria-hidden="true" ></i> New RFI</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="tabs menu" data-active-collapse="true" data-tabs id="collapsing-tabs">
-                            <li class="tabs-title is-active"><a href="#panelRFI" aria-selected="true">
+</div>--> <div class="RFIcard">
+    <div class="card-header"> <div class="grid-x">
+    <div class="medium-5 cell"> <div class="top-bar-left">
+    <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+            <li><a href="#">All projects </a></li>
+            <li><a href="#">Company 1</a></li>
+            <li> <a href="#">Project 1</a></li>
+        </ul>
+    </nav>
+</div></div>
+    <div class="medium-7 cell">
+        <ul class="menu right">
+            <li><a href="#" class="secondary clear button"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export log</a></li>
+            <li><a href="#" class="secondary clear button"><i class="fa fa-print" aria-hidden="true"></i> Print</a></li>
+            <li><a href="#" class=" button small success white" data-toggle="formModal"><i class="fa fa-plus" aria-hidden="true" ></i> New RFI</a></li>
+        </ul>
+    </div>
+</div></div>
+    <ul class="tabs menu" data-active-collapse="true" data-tabs id="collapsing-tabs">
+        <li class="tabs-title is-active"><a href="#panelRFI" aria-selected="true">
            RFIs</a></li>
-                            <li class="tabs-title">
-                                <a href="#panelKPI"> <i class="fa fa-cog" aria-hidden="true"></i> KPI metrics </a>
-                            </li>
-                        </ul>
-                        <div class="tabs-content" data-tabs-content="collapsing-tabs">
-                            <div class="tabs-panel is-active" id="panelRFI">
-                                <div id="RFIpanel">
-                                    <ul class="card-group-tabs tabs" data-tabs id="collapsing-tabs">
-                                        <div id="tab-responded">
-                                            <li class="tabs-title is-active "><a href="#panelResponded" aria-selected="true" class="success-tab"><i class="fa fa-flag" aria-hidden="true"></i> Responded <span class="RFInumber">3</span></a></li>
-                                        </div>
-                                        <div id="tab-open">
-                                            <li class="tabs-title"><a href="#panelOpen" class="warning-tab"><i class="fa fa-flag" aria-hidden="true"></i> Open <span class="RFInumber">3</span></a></li>
-                                        </div>
-                                        <div id="tab-overdue">
-                                            <li class="tabs-title"><a href="#panelOverdue" class="alert-tab"><i class="fa fa-flag" aria-hidden="true"></i> Overdue <span class="RFInumber">3</span></a></li>
-                                        </div>
-                                        <li class="right"><a href="#" class="primary clear button right"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email RFI</a> </li>
-                                    </ul>
-                                    <div class="tabs-content" data-tabs-content="collapsing-tabs">
-                                        <div class="tabs-panel is-active" id="panelResponded">
-                                            <div class="table-scroll">
-                                                <table id="example" class="display " cellspacing="0" width="100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>RFI #</th>
-                                                            <th>Title</th>
-                                                            <th>Code</th>
-                                                            <th>Priority</th>
-                                                            <th>Discipline</th>
-                                                            <th>Date submitted</th>
-                                                            <th>Date responded</th>
-                                                            <th>Responded by</th>
-                                                            <th>Action required</th>
-                                                            <th>Action completed</th>
-                                                            <th>Action confirmed</th>
-                                                            <th> </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="warning">Medium</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>No</td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="tabs-panel" id="panelOpen">
-                                            <div class="table-scroll">
-                                                <table id="example" class="display " cellspacing="0" width="100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>RFI #</th>
-                                                            <th>Title</th>
-                                                            <th>Code</th>
-                                                            <th>Priority</th>
-                                                            <th>Discipline</th>
-                                                            <th>Date submitted</th>
-                                                            <th>Date responded</th>
-                                                            <th>Responded by</th>
-                                                            <th>Action required</th>
-                                                            <th>Action completed</th>
-                                                            <th>Action confirmed</th>
-                                                            <th> </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="warning">Medium</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>No</td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="tabs-panel" id="panelOverdue">
-                                            <div class="table-scroll">
-                                                <table id="example" class="display " cellspacing="0" width="100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>RFI #</th>
-                                                            <th>Title</th>
-                                                            <th>Code</th>
-                                                            <th>Priority</th>
-                                                            <th>Discipline</th>
-                                                            <th>Date submitted</th>
-                                                            <th>Date responded</th>
-                                                            <th>Responded by</th>
-                                                            <th>Action required</th>
-                                                            <th>Action completed</th>
-                                                            <th>Action confirmed</th>
-                                                            <th> </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="warning">Medium</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>No</td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3829383</td>
-                                                            <td>RFI382938A33</td>
-                                                            <td>A2</td>
-                                                            <td><span class="alert">High</span></td>
-                                                            <td>Pipping</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>John Smith</td>
-                                                            <td>Yes</td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                                                            <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tabs-panel" id="panelKPI">
-                                <div class="masonry-css">
-                                    <div class="masonry-css-item"> <img src="http://placehold.it/300x300" class="" height="" width="" alt=""> </div>
-                                    <div class="masonry-css-item">
-                                        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fugiat iusto blanditiis tenetur alias ut.</div>
-                                    </div>
-                                    <div class="masonry-css-item">
-                                        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, a ut.</div>
-                                    </div>
-                                    <div class="masonry-css-item">
-                                        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Op.</div>
-                                    </div>
-                                    <div class="masonry-css-item"> <img src="http://placehold.it/300x600" class="" height="" width="" alt=""> </div>
-                                    <div class="masonry-css-item"> <img src="http://placehold.it/300x200" class="" height="" width="" alt=""> </div>
-                                    <div class="masonry-css-item">
-                                        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fugiat iusto blanditiis tenetur alias ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio beatae deserunt quisquam similique vitae hic eveniet, velit, natus unde tempora excepturi labore, veniam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-                                    </div>
-                                    <div class="masonry-css-item"> <img src="http://placehold.it/700x200" class="" height="" width="" alt=""> </div>
-                                    <div class="masonry-css-item"> <img src="http://placehold.it/350x400" class="" height="" width="" alt=""> </div>
-                                    <div class="masonry-css-item">
-                                        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labo?</div>
-                                    </div>
-                                    <div class="masonry-css-item">
-                                        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, la, consectetur adipisicing elit. Odio beatae deserunt quisquam similique vitae hic eveniet, velit, natus unde tempora excepturi labore, veniam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-                                    </div>
-                                    <div class="masonry-css-item"> <img src="http://placehold.it/450x400" class="" height="" width="" alt=""> </div>
-                                    <div class="masonry-css-item">
-                                        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-                                    </div>
-                                    <div class="masonry-css-item"> <img src="http://placehold.it/350x80" class="" height="" width="" alt=""> </div>
-                                    <div class="masonry-css-item"> <img src="http://placehold.it/400x400" class="" height="" width="" alt=""> </div>
-                                    <div class="masonry-css-item"> <img src="http://placehold.it/440x400" class="" height="" width="" alt=""> </div>
-                                    <div class="masonry-css-item">
-                                        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-                                    </div>
-                                    <div class="masonry-css-item">
-                                        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-                                    </div>
-                                    <div class="masonry-css-item">
-                                        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="large reveal" id="formModal" data-reveal>
-                        <div class="top-bar fixed">
-                            <div class="top-bar-left"><a class="button primary">Request</a></div>
-                            <div class="top-bar-right"><a href="#" class="button secondary clear"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
-                                <button class="button clear close-form" data-close aria-label="Close modal" type="button"> <span aria-hidden="true">&times;</span> </button>
-                            </div>
-                        </div>
-                        <div class="inside-modal">
-                            <div class="top-bar-left">
-                                <nav aria-label="You are here:" role="navigation">
-                                    <ul class="breadcrumbs">
-                                        <li><a href="#">All projects </a></li>
-                                        <li><a href="#">Company 1</a></li>
-                                        <li> <a href="#">Project 1</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <header>
-                                <h3>Request for information</h3>
-                                <p>by Tim Williams / Jul 21, 2017 13:01</p>
-                            </header>
-                            <form>
-                                <div class="grid-x grid-padding-x">
-                                    <div class="small-12 medium-6 cell">
-                                        <label class="small-6 medium-6 cell">Title
-                                            <input type="text" placeholder="RFI title" style="max-width: 300px"> </label>
-                                        <label>Plant
-                                            <input type="text" placeholder="Plant" style="max-width: 100px"> </label>
-                                        <label>Select Discipline
-                                            <select>
-                                                <option value="" class="secondary">Select discipline</option>
-                                                <option value="discipline1">Discipline 1</option>
-                                                <option value="discipline2">Discipline 2</option>
-                                                <option value="discipline3">Discipline 3</option>
-                                            </select>
-                                        </label>
-                                        <label>Tag
-                                            <input type="text" placeholder="Tag" style="max-width: 200px"> </label>
-                                        <label>RFI number
-                                            <input disabled type="text" placeholder="RFI number" style="max-width: 300px"> </label>
-                                    </div>
-                                    <div class="small-12 medium-6 cell">
-                                        <label>Assigned to
-                                            <input disabled type="text" placeholder="RFI number"> </label>
-                                        <label>Select Menu
-                                            <select>
-                                                <option value="high-priority"><i class="fa fa-circle alert" aria-hidden="true"></i> High Priority</option>
-                                                <option value="low-priority"><i class="fa fa-circle warning" aria-hidden="true"></i> Medium Priority</option>
-                                            </select>
-                                        </label>
-                                        <label>Justify priority
-                                            <textarea name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
-                                        </label>
-                                    </div>
-                                    <div class="small-12 medium-12 cell">
-                                        <label>Describe problem or requested info
-                                            <textarea name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
-                                        </label>
-                                        <label>Describe recomendation, proposal or suggested mitigation
-                                            <textarea name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
-                                        </label>
-                                    </div>
-                                    <div class="small-12 medium-6 cell">
-                                        <label>Upload reference document
-                                            <div class="upload-dropzone"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Drop files here or click to select files</div>
-                                        </label>
-                                    </div>
-                                    <div class="small-12 medium-6 cell">
-                                        <label>Uploaded document
-                                            <div class="uploaded-docs"> <a class="button clear secondary">RFI-33323232-3.pdf <i class="fa fa-trash" aria-hidden="true"></i></a> </div>
-                                        </label>
-                                    </div>
-                                    <div class="small-12 cell end-form">
-                                        <div class="button-group"> <a class="hollow secondary button">Cancel</a> <a class="success button">Submit RFI</a> </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <li class="tabs-title">
+            <a href="#panelKPI"> <i class="fa fa-cog" aria-hidden="true"></i> KPI metrics </a>
+        </li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel is-active" id="panelRFI"> <div id="RFIpanel">
+    <ul class="card-group-tabs tabs" data-tabs id="collapsing-tabs">
+        <div id="tab-responded">
+            <li class="tabs-title is-active "><a href="#panelResponded" aria-selected="true" class="success-tab"><i class="fa fa-flag" aria-hidden="true"></i> Responded <span class="RFInumber">3</span></a></li>
+        </div>
+        <div id="tab-open">
+            <li class="tabs-title"><a href="#panelOpen" class="warning-tab"><i class="fa fa-flag" aria-hidden="true"></i> Open <span class="RFInumber">3</span></a></li>
+        </div>
+        <div id="tab-overdue">
+            <li class="tabs-title"><a href="#panelOverdue" class="alert-tab"><i class="fa fa-flag" aria-hidden="true"></i> Overdue <span class="RFInumber">3</span></a></li>
+        </div>
+        <li class="right"><a href="#" class="primary clear button right"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email RFI</a> </li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel is-active" id="panelResponded"> <div class="table-scroll">
+    <table id="example" class="display " cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>RFI #</th>
+                <th>Title</th>
+                <th>Code</th>
+                <th>Priority</th>
+                <th>Discipline</th>
+                <th>Date submitted</th>
+                <th>Date responded</th>
+                <th>Responded by</th>
+                <th>Action required</th>
+                <th>Action completed</th>
+                <th>Action confirmed</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="warning">Medium</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>No</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+        </tbody>
+    </table>
+</div></div>
+        <div class="tabs-panel" id="panelOpen"> <div class="table-scroll">
+    <table id="example" class="display " cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>RFI #</th>
+                <th>Title</th>
+                <th>Code</th>
+                <th>Priority</th>
+                <th>Discipline</th>
+                <th>Date submitted</th>
+                <th>Date responded</th>
+                <th>Responded by</th>
+                <th>Action required</th>
+                <th>Action completed</th>
+                <th>Action confirmed</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="warning">Medium</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>No</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+        </tbody>
+    </table>
+</div> </div>
+        <div class="tabs-panel" id="panelOverdue"> <div class="table-scroll">
+    <table id="example" class="display " cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>RFI #</th>
+                <th>Title</th>
+                <th>Code</th>
+                <th>Priority</th>
+                <th>Discipline</th>
+                <th>Date submitted</th>
+                <th>Date responded</th>
+                <th>Responded by</th>
+                <th>Action required</th>
+                <th>Action completed</th>
+                <th>Action confirmed</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="warning">Medium</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>No</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+        </tbody>
+    </table>
+</div> </div>
+    </div>
+</div> </div>
+        <div class="tabs-panel" id="panelKPI"> <div class="masonry-css">
+    <div class="masonry-css-item"> <img src="http://placehold.it/300x300" class="" height="" width="" alt=""> </div>
+    <div class="masonry-css-item">
+        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fugiat iusto blanditiis tenetur alias ut.</div>
+    </div>
+    <div class="masonry-css-item">
+        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, a ut.</div>
+    </div>
+    <div class="masonry-css-item">
+        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Op.</div>
+    </div>
+    <div class="masonry-css-item"> <img src="http://placehold.it/300x600" class="" height="" width="" alt=""> </div>
+    <div class="masonry-css-item"> <img src="http://placehold.it/300x200" class="" height="" width="" alt=""> </div>
+    <div class="masonry-css-item">
+        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fugiat iusto blanditiis tenetur alias ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio beatae deserunt quisquam similique vitae hic eveniet, velit, natus unde tempora excepturi labore, veniam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
+    </div>
+    <div class="masonry-css-item"> <img src="http://placehold.it/700x200" class="" height="" width="" alt=""> </div>
+    <div class="masonry-css-item"> <img src="http://placehold.it/350x400" class="" height="" width="" alt=""> </div>
+    <div class="masonry-css-item">
+        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labo?</div>
+    </div>
+    <div class="masonry-css-item">
+        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, la, consectetur adipisicing elit. Odio beatae deserunt quisquam similique vitae hic eveniet, velit, natus unde tempora excepturi labore, veniam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
+    </div>
+    <div class="masonry-css-item"> <img src="http://placehold.it/450x400" class="" height="" width="" alt=""> </div>
+    <div class="masonry-css-item">
+        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
+    </div>
+    <div class="masonry-css-item"> <img src="http://placehold.it/350x80" class="" height="" width="" alt=""> </div>
+    <div class="masonry-css-item"> <img src="http://placehold.it/400x400" class="" height="" width="" alt=""> </div>
+    <div class="masonry-css-item"> <img src="http://placehold.it/440x400" class="" height="" width="" alt=""> </div>
+    <div class="masonry-css-item">
+        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
+    </div>
+    <div class="masonry-css-item">
+        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
+    </div>
+    <div class="masonry-css-item">
+        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
+    </div>
+</div> </div>
+    </div>
+</div> <div class="large reveal" id="formModal" data-reveal>
+    <div class="top-bar fixed">
+        <div class="top-bar-left"><a class="button primary">Request</a></div>
+        <div class="top-bar-right"><a href="#" class="button secondary clear"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
+            <button class="button clear close-form" data-close aria-label="Close modal" type="button"> <span aria-hidden="true">&times;</span> </button>
         </div>
     </div>
-    <footer>
-        <nav class="nav-footer">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">© 2017 Copyright: Tryst Canada Consultants Ltd.</a></li>
-            </ul>
-        </nav>
-    </footer>
-    <!--    <script src="assets/js/app.js"></script>-->
+
+</div> </div>
+        </div>
+    </div>
+</div> <footer>
+    <nav class="nav-footer">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">© 2017 Copyright: Tryst Canada Consultants Ltd.</a></li>
+        </ul>
+    </nav>
+</footer>
+
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
