@@ -47,6 +47,11 @@
     form {
         margin: 10px;
     }
+    h3,
+    h4 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 }
 
 .upload-dropzone {
@@ -83,12 +88,12 @@
     .button-group {
         float: right;
     }
+    a {
+        font-size: .75em !important;
+    }
     a.success,
     a.success:hover {
         color: $white;
-    }
-    h4 {
-        margin-bottom: 0;
     }
     span {
         line-height: 32px;
@@ -112,7 +117,8 @@
         font-size: 12px;
         text-align: left;
     }
-    .ready-close {
+    .ready-close,
+    .confirm-reject {
         background: lighten($primary-color, 50%);
         border: 1px solid $primary-color;
         padding: 10px;
@@ -125,6 +131,9 @@
             background: $white;
         }
     }
+    .confirm-reject {
+        height: 100px;
+    }
     .closing {
         border: 1px solid $medium-gray;
         padding: 10px;
@@ -133,7 +142,9 @@
             line-height: 2em;
         }
     }
-    .closed {
+    .closed,
+    .confirmed-closure,
+    .rejected-closure {
         border: 1px solid $success-color;
         padding: 10px;
         background: lighten($success-color, 68%);
@@ -143,6 +154,18 @@
         }
         .hollow {
             background: $white;
+        }
+    }
+    .confirmed-closure {
+        height: 60px;
+    }
+    .rejected-closure {
+        border: 1px solid $alert-color;
+        padding: 10px;
+        background: lighten($alert-color, 55%);
+        h5 {
+            color: $alert-color;
+            line-height: 2em;
         }
     }
 }

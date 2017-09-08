@@ -129,20 +129,29 @@
     table {
         width: 100% !important;
         .button {
-        display: inline-block;
-        font-size: 14px !important;
-        margin: 0;
+            display: inline-block;
+            font-size: 14px !important;
+            margin: 0;
+        }
+        th {
+            font-size: .8em;
+        }
+        td {
+            padding: 0 5px;
+            text-align: center;
+        }
+        .td-tool {
+            min-width: 120px;
+        }
     }
-    th {
-        font-size: .8em;
-    }
-    td {
-        padding: 0 5px;
-        text-align: center;
-    }
-    .td-tool {
-        min-width: 120px;
-    }
-    }
-    
+}
+
+input {
+    margin-bottom: 5px !important;
+}
+
+.tool {
+    font-size: .8em !important;
+    line-height: 2.4em;
+    font-weight: bold;
 }

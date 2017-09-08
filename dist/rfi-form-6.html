@@ -14,7 +14,7 @@
 
 <body>  <div id="formModal" style="width: 800px; margin: 20px auto; background: #fff;"> <div class="top-bar fixed">
     <div class="top-bar-left"><a class="button clear">Request</a><a class="button clear">Response</a><a class="button primary">Action Closure</a></div>
-    <div class="top-bar-right"> <span class="success">Status: Awaiting Action Closure</span><a href="#" class="button secondary clear"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
+    <div class="top-bar-right"> <span class="success">Status: Completed</span><a href="#" class="button secondary clear"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
         <button class="button clear close-form" data-close aria-label="Close modal" type="button"> <span aria-hidden="true">&times;</span> </button>
     </div>
 </div><div class="inside-modal"><div class="top-bar-left">
@@ -113,8 +113,8 @@
                         </tr>
                     </table>
                 </div>
-                <div class="small-6 cell ready-close"><span>Is this action ready to be closed?
-                    <div class="button-group"> <a class="hollow secondary button">Yes</a> <a class="hollow secondary button">No</a> </div></span> </div>
+                <div class="small-6 cell confirm-reject"><span>Confirm or reject action closure?
+                    <div class="button-group"> <a class="hollow secondary button">Confirm</a> <a class="hollow secondary button">Reject</a> </div></span> </div>
             </section>
         </div>
         <div class="form-area">
@@ -123,12 +123,17 @@
             <div class="button-group"> <a class="hollow success button">Yes</a> <a class="clear secondary button">No</a> </div>
             </span> </div>
                 <div class="small-6 cell">
-                    <h5>List of changes</h5>
+                    <h5>List of required documents</h5>
                     <table style="width:100%">
                         <tr>
                             <th>Drawing_#</th>
-                            <th>Rev_#</th>
+                            <th>Document_#</th>
                             <th>Comment</th>
+                        </tr>
+                        <tr>
+                            <td>32423</td>
+                            <td>1</td>
+                            <td>Lorem Ipsum is simply dummy text of the printing and x industry.</td>
                         </tr>
                         <tr>
                             <td>32423</td>
@@ -137,8 +142,8 @@
                         </tr>
                     </table>
                 </div>
-                <div class="small-6 cell ready-close"><span>Is this action ready to be closed?
-                    <div class="button-group"> <a class="hollow secondary button">Yes</a> <a class="hollow secondary button">No</a> </div></span> </div>
+                <div class="small-6 cell confirmed-closure">
+                    <h5><i class="fa fa-check-circle" aria-hidden="true"></i><i class="fa fa-check-circle" aria-hidden="true"></i> Confirmed action closure <a class="right button clear secondary tool"><i class="fa fa-repeat" aria-hidden="true"></i> Undo</a> </h5> </div>
             </section>
         </div>
         <div class="form-area">
@@ -147,35 +152,31 @@
             <div class="button-group"> <a class="hollow success button">Yes</a> <a class="clear secondary button">No</a> </div>
             </span> </div>
                 <div class="small-6 cell">
-                    <h5>List of changes</h5>
+                    <h5>List of other actions</h5>
                     <table style="width:100%">
                         <tr>
-                            <th>Drawing_#</th>
-                            <th>Rev_#</th>
-                            <th>Comment</th>
+                            <th>Describe_action</th>
+                            <th>Assigned_to</th>
+                            <th>Due_date</th>
                         </tr>
                         <tr>
-                            <td>32423</td>
-                            <td>1</td>
-                            <td>Lorem Ipsum is simply dummy text of the printing and x industry.</td>
+                            <td>Lorem Ipsum is simply dummy text of the printing</td>
+                            <td>John Smith</td>
+                            <td>Jul/28/2017</td>
                         </tr>
                     </table>
                 </div>
-                <div class="small-6 cell closing">
-                    <h5>Closing Action <a class="right button clear secondary tool"><i class="fa fa-repeat" aria-hidden="true"></i> Undo</a> </h5>
-                    <label>Upload reference document
-                        <div class="upload-dropzone"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Drop files here or click to select files</div>
-                    </label>
-                    <label class="small-12 cell">Add comment
+                <div class="small-6 cell rejected-closure">
+                    <h5><i class="fa fa-check-circle" aria-hidden="true"></i><i class="fa fa-times-circle" aria-hidden="true"></i> Action Closed <a class="right button clear secondary tool"><i class="fa fa-repeat" aria-hidden="true"></i> Undo</a> </h5>
+                    <label class="small-12 cell">Justify rejection <span style="color: red;">*</span>
                         <textarea name="Response1" rows="2" placeholder="Enter comment"></textarea>
                     </label>
-                    <div class="button-group"> <a class="hollow secondary button">Cancel</a> <a class="primary button">Close action</a> </div>
                 </div>
             </section>
         </div>
     </div>
     <div class="end-form">
-        <div class="button-group"> <a class="hollow secondary button">Cancel</a> <a class="secondary button">Save</a> </div>
+        <div class="button-group"> <a class="hollow secondary button">Cancel</a> <a class="success button">Save</a> </div>
     </div>
 </form></div>
 
