@@ -1,0 +1,41 @@
+<form class="right">
+    <label style="font-size: 12px">
+        <input type="radio" name="display_avg" value="top-best" checked> Best 5
+        <input type="radio" name="display_avg" value="top-worse" style="margin-left: 20px"> Wost 5</label>
+</form>
+<div id="RFI_avg" style="width:100%; height:200px;"></div>
+<script>
+    $(function () {
+        var myChart = Highcharts.chart('RFI_avg', {
+            chart: {
+                type: 'bar'
+            }
+            , title: {
+                text: 'Best Responders'
+            }
+            , legend: {
+                enabled: false
+            }
+            , plotOptions: {
+                series: {
+                    animation: {
+                        duration: 2000
+                        , easing: 'easeOutBounce'
+                    }
+                }
+            }
+            , xAxis: {
+                categories: ['Jonh Smith', 'Patric Stockhain', 'James McDonald', 'Francis Calder', 'Peter Rockstone']
+            }
+            , yAxis: {
+                title: {
+                    text: 'RFI #'
+                }
+            }
+            , series: [{
+                name: 'Average'
+                , data: [110, 213, 3322, 1110, 213]
+        }]
+        });
+    });
+</script>

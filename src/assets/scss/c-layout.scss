@@ -82,7 +82,7 @@
         display: inline-block;
         text-decoration: none;
         text-align: center;
-        padding: 10px 30px;
+        padding: 0 30px;
     }
     .copyright {
         color: darken($primary-color, 10%);
@@ -125,7 +125,6 @@
 .table-scroll {
     overflow-x: auto;
     overflow-y: auto;
-    max-height: 460px;
     table {
         width: 100% !important;
         .button {
@@ -154,4 +153,18 @@ input {
     font-size: .8em !important;
     line-height: 2.4em;
     font-weight: bold;
+}
+
+.highcharts-title {
+    font-size: 12px !important;
+    font-weight: bolder;
+}
+
+.highcharts-credits {
+    display: none;
+}
+
+.container-y {
+    height: 100vh;
+    display: flex;
 }

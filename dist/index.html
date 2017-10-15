@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RFI app</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oxygen:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.4.0/b-colvis-1.4.0/b-html5-1.4.0/b-print-1.4.0/cr-1.3.3/fc-3.2.2/fh-3.1.2/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.css" />
     <script type="text/javascript" src="https://cdn.datatables.net/v/zf/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.4.0/b-colvis-1.4.0/b-html5-1.4.0/b-print-1.4.0/cr-1.3.3/fc-3.2.2/fh-3.1.2/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
-    <link rel="stylesheet" href="assets/css/app.css"> </head>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+</head>
 
-<body>  <div class="fixed">
+<body>  <div class="grid-y medium-grid-frame container-y">
+    <div class="cell shrink header medium-cell-block-container"> <div class="fixed">
     <nav class="top-bar" id="admin-menu">
         <button class="button secondary show-for-small-only" data-toggle="offCanvas"><i class="fa fa-bars" aria-hidden="true"></i></button>
         <nav class="top-bar-left">
@@ -44,154 +46,10 @@
             </ul>
         </div>
     </nav>
-</div><div class="off-canvas-wrapper">
-    <div class="off-canvas position-left" id="offCanvas" data-off-canvas> Logo <div class="accordionRFI">
-    <div class="grid-x all-projects">
-        <div class="small-6">All projects</div>
-        <div class="small-2 success"><i class="fa fa-flag" aria-hidden="true"></i></div>
-        <div class="small-2 warning"><i class="fa fa-flag" aria-hidden="true"></i></div>
-        <div class="small-2 alert"><i class="fa fa-flag" aria-hidden="true"></i></div>
-    </div>
-    <ul class="accordion" data-accordion data-allow-all-closed="true" id="RFI-accordion">
-        <li class="accordion-item is-active" data-accordion-item>
-            <a href="#deeplink1" class="accordion-title">
-                <div class="grid-x">
-                    <div class="small-6">Company 1</div>
-                    <div class="auto cell">1</div>
-                    <div class="auto cell">4</div>
-                    <div class="auto cell">
-                        <div class="has-action">1</div>
-                    </div>
-                </div>
-            </a>
-            <div class="accordion-content is-active" data-tab-content id="Project1">
-                <a>
-                    <div class="grid-x">
-                        <div class="small-6">Project 1</div>
-                        <div class="auto cell">0</div>
-                        <div class="auto cell">4</div>
-                        <div class="auto cell">
-                            <div class="has-action">1</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="accordion-content" data-tab-content id="Project1">
-                <a>
-                    <div class="grid-x">
-                        <div class="small-6">Project 2</div>
-                        <div class="auto cell">0</div>
-                        <div class="auto cell">4</div>
-                        <div class="auto cell">0</div>
-                    </div>
-                </a>
-            </div>
-            <div class="accordion-content" data-tab-content id="Project1">
-                <a>
-                    <div class="grid-x">
-                        <div class="small-6">Project 0</div>
-                        <div class="auto cell">0</div>
-                        <div class="auto cell">4</div>
-                        <div class="auto cell">0</div>
-                    </div>
-                </a>
-            </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-            <a href="#deeplink2" class="accordion-title">
-                <div class="grid-x">
-                    <div class="small-6 ">Company 2</div>
-                    <div class="auto cell">1</div>
-                    <div class="auto cell">4</div>
-                    <div class="auto cell">0</div>
-                </div>
-            </a>
-            <div class="accordion-content" data-tab-content id="Project1">
-                <a>
-                    <div class="grid-x">
-                        <div class="small-6">Project 1</div>
-                        <div class="auto cell">2</div>
-                        <div class="auto cell">4</div>
-                        <div class="auto cell">0</div>
-                    </div>
-                </a>
-            </div>
-            <div class="accordion-content" data-tab-content id="Project1">
-                <a>
-                    <div class="grid-x ">
-                        <div class="small-6">Project 1</div>
-                        <div class="auto cell">2</div>
-                        <div class="auto cell">4</div>
-                        <div class="auto cell">0</div>
-                    </div>
-                </a>
-            </div>
-            <div class="accordion-content" data-tab-content id="Project1">
-                <a>
-                    <div class="grid-x">
-                        <div class="small-6">Project 1</div>
-                        <div class="auto cell">5</div>
-                        <div class="auto cell">4</div>
-                        <div class="auto cell">0</div>
-                    </div>
-                </a>
-            </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-            <a href="#deeplink2" class="accordion-title">
-                <div class="grid-x">
-                    <div class="small-6 cell">Company 3</div>
-                    <div class="auto cell">11</div>
-                    <div class="auto cell">4</div>
-                    <div class="auto cell">
-                        <div class="has-action">1</div>
-                    </div>
-                </div>
-            </a>
-            <div class="accordion-content" data-tab-content id="Project1">
-                <a>
-                    <div class="grid-x">
-                        <div class="small-6 cell">Project 1</div>
-                        <div class="auto cell">10</div>
-                        <div class="auto cell">4</div>
-                        <div class="auto cell">0</div>
-                    </div>
-                </a>
-            </div>
-            <div class="accordion-content" data-tab-content id="Project1">
-                <a>
-                    <div class="grid-x">
-                        <div class="small-6 cell">Project 1</div>
-                        <div class="auto cell">1</div>
-                        <div class="auto cell">4</div>
-                        <div class="auto cell">0</div>
-                    </div>
-                </a>
-            </div>
-            <div class="accordion-content" data-tab-content id="Project1">
-                <a>
-                    <div class="grid-x">
-                        <div class="small-6 cell">Project 1</div>
-                        <div class="auto cell">3</div>
-                        <div class="auto cell">4</div>
-                        <div class="auto cell">
-                            <div class="has-action">1</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </li>
-    </ul>
-    <div class="grid-x">
-        <header>
-            <label>RFI Outstanding actions tracker</label>
-        </header><a href="#" class="button expanded wait-response">Actions<span class="has-action">6</span></a> <a href="#" class="button expanded wait-confirmation">Action confirmations<span class="has-action">6</span></a></div>
-</div>
-        <button class="close-button" aria-label="Close menu" type="button" data-close> <span aria-hidden="true">&times;</span> </button>
-    </div>
-    <div class="off-canvas-content" data-off-canvas-content>
-        <div class="grid-x ">
-            <div class="hide-for-small-only medium-4 large-3 cell side-panel-rfi"> <div class="accordionRFI">
+</div> </div>
+    <div class="cell medium-auto medium-cell-block-container">
+        <div class="grid-x grid-padding-x">
+            <div class="cell medium-3 side-panel-rfi"> <div class="accordionRFI">
     <div class="grid-x all-projects">
         <div class="small-6">All projects</div>
         <div class="small-2 success"><i class="fa fa-flag" aria-hidden="true"></i></div>
@@ -333,7 +191,7 @@
             <label>RFI Outstanding actions tracker</label>
         </header><a href="#" class="button expanded wait-response">Actions<span class="has-action">6</span></a> <a href="#" class="button expanded wait-confirmation">Action confirmations<span class="has-action">6</span></a></div>
 </div> </div>
-            <div class="small-12 medium-8 large-9 cell main-panel-rfi"><!--<div class="second-bar grid-x grid-padding-y">
+            <div class="cell medium-9 cell-block-y main-panel-rfi"> <!--<div class="second-bar grid-x grid-padding-y">
     <div class="hide-for-small-only medium-4">
         <h6>RFI Dashboard</h6> </div>
     <div class="right small-12 medium-offset-4 medium-4">
@@ -414,7 +272,7 @@
                 <td>Yes</td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+                <td class="td-tool"><a class="button clear" type="button" data-toggle="offCanvasNestedPush"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
             </tr>
             <tr>
                 <td>3829383</td>
@@ -632,7 +490,7 @@
                 <td>Yes</td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+                <td class="td-tool"><a class="button clear" type="button" data-toggle="offCanvasNestedPush"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
             </tr>
             <tr>
                 <td>3829383</td>
@@ -850,7 +708,7 @@
                 <td>Yes</td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+                <td class="td-tool"><a class="button clear" type="button" data-toggle="offCanvasNestedPush"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
             </tr>
             <tr>
                 <td>3829383</td>
@@ -1039,47 +897,366 @@
 </div> </div>
     </div>
 </div> </div>
-        <div class="tabs-panel" id="panelKPI"> <div class="masonry-css">
-    <div class="masonry-css-item"> <img src="http://placehold.it/300x300" class="" height="" width="" alt=""> </div>
-    <div class="masonry-css-item">
-        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fugiat iusto blanditiis tenetur alias ut.</div>
+        <div class="tabs-panel" id="panelKPI"> <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+        <div class="small-12 ">
+            <p class="right">Report as of Sep 3, 2017 (18:06 MST)
+                <p>
+        </div>
     </div>
-    <div class="masonry-css-item">
-        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, a ut.</div>
+</div>
+<div class="grid-container">
+    <div class="grid-x grid-margin-x">
+        <div class="cell small-4"> <div id="RFI_month" style="width:100%; height:200px;"></div>
+<script>
+    $(function () {
+        var myChart = Highcharts.chart('RFI_month', {
+            chart: {
+                type: 'line'
+            }
+            , title: {
+                text: 'RFI by Month'
+            }
+            , legend: {
+                enabled: false
+            }
+            , plotOptions: {
+                series: {
+                    animation: {
+                        duration: 2000
+                        , easing: 'easeOutBounce'
+                    }
+                }
+            }
+            , xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct']
+            }
+            , yAxis: {
+                title: {
+                    text: 'RFI #'
+                }
+            }
+            , series: [{
+                name: 'Month'
+                , data: [110, 213, 3322, 1110, 213, 3132, 10, 2213, 232]
+        }]
+        });
+    });
+</script></div>
+        <div class="cell small-4"> <div id="RFI_code" style="width:100%; height:200px;"></div>
+<script>
+    $(function () {
+        var myChart = Highcharts.chart('RFI_code', {
+            chart: {
+                type: 'column'
+            }
+            , title: {
+                text: 'RFI by Code'
+            }
+            , legend: {
+                enabled: false
+            }
+            , plotOptions: {
+                series: {
+                    animation: {
+                        duration: 2000
+                        , easing: 'easeOutBounce'
+                    }
+                }
+            }
+            , xAxis: {
+                categories: ['A1', 'A2', 'B1', 'B2', 'C1']
+            }
+            , yAxis: {
+                title: {
+                    text: 'RFI #'
+                }
+            }
+            , series: [{
+                name: 'Users'
+                , data: [1500, 213, 3322, 1110, 213]
+        }]
+        });
+    });
+</script></div>
+        <div class="cell small-4"> <form class="right">
+    <label style="font-size: 12px">
+        <input type="radio" name="display_avg" value="top-best" checked> Best 5
+        <input type="radio" name="display_avg" value="top-worse" style="margin-left: 20px"> Wost 5</label>
+</form>
+<div id="RFI_avg" style="width:100%; height:200px;"></div>
+<script>
+    $(function () {
+        var myChart = Highcharts.chart('RFI_avg', {
+            chart: {
+                type: 'bar'
+            }
+            , title: {
+                text: 'Best Responders'
+            }
+            , legend: {
+                enabled: false
+            }
+            , plotOptions: {
+                series: {
+                    animation: {
+                        duration: 2000
+                        , easing: 'easeOutBounce'
+                    }
+                }
+            }
+            , xAxis: {
+                categories: ['Jonh Smith', 'Patric Stockhain', 'James McDonald', 'Francis Calder', 'Peter Rockstone']
+            }
+            , yAxis: {
+                title: {
+                    text: 'RFI #'
+                }
+            }
+            , series: [{
+                name: 'Average'
+                , data: [110, 213, 3322, 1110, 213]
+        }]
+        });
+    });
+</script></div>
     </div>
-    <div class="masonry-css-item">
-        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Op.</div>
+</div>
+<div class="grid-container">
+    <div class="grid-x grid-margin-x">
+        <div class="cell small-4"> <div id="RFI_discipline" style="width:100%; height:200px;"></div>
+<script>
+    $(function () {
+        var myChart = Highcharts.chart('RFI_discipline', {
+            chart: {
+                plotBackgroundColor: null
+                , plotBorderWidth: null
+                , plotShadow: false
+                , type: 'pie'
+            }
+            , title: {
+                text: 'RFI by Discipline'
+            }
+            , tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            }
+            , plotOptions: {
+                pie: {
+                    allowPointSelect: false
+                    , cursor: 'pointer'
+                    , dataLabels: {
+                        enabled: true
+                        , format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                        , style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+                , series: {
+                    animation: {
+                        duration: 2000
+                        , easing: 'easeOutBounce'
+                    }
+                }
+            }
+            , series: [{
+                name: 'Brands'
+                , colorByPoint: true
+                , data: [{
+                    name: 'Pipping'
+                    , y: 30
+        }, {
+                    name: 'Mech'
+                    , y: 20
+        }, {
+                    name: 'CSA'
+                    , y: 10
+        }, {
+                    name: 'Elec'
+                    , y: 35
+        }, {
+                    name: 'IRC'
+                    , y: 20
+        }]
+    }]
+        });
+    });
+</script></div>
+        <div class="cell small-4"> <div id="RFI_time_discipline" style="width:100%; height:200px;"></div>
+<script>
+    $(function () {
+        var myChart = Highcharts.chart('RFI_time_discipline', {
+            chart: {
+                type: 'column'
+            }
+            , title: {
+                text: 'RFI by Response Time/Discipline'
+            }
+            , legend: {
+                enabled: false
+            }
+            , plotOptions: {
+                series: {
+                    animation: {
+                        duration: 2000
+                        , easing: 'easeOutBounce'
+                    }
+                }
+            }
+            , xAxis: {
+                categories: ['Mech', 'Pip', 'CSA', 'Elec', 'IRC']
+            }
+            , yAxis: {
+                title: {
+                    text: '# of days'
+                }
+            }
+            , series: [{
+                name: 'Users'
+                , data: [1500, 213, 3322, 1110, 213]
+        }]
+        });
+    });
+</script></div>
+        <div class="cell small-4"> <form class="center">
+    <label style="font-size: 12px">
+        <input type="radio" name="display_time_ind" value="top-best-ind" checked> Best 5
+        <input type="radio" name="display_time_ind" value="top-worse-ind" style="margin-left: 20px"> Wost 5</label>
+</form>
+<div id="RFI_time_individual" style="width:100%; height:200px;"></div>
+<script>
+    $(function () {
+        var myChart = Highcharts.chart('RFI_time_individual', {
+            chart: {
+                type: 'bar'
+            }
+            , title: {
+                text: 'RFI by Response Time/Individual'
+            }
+            , legend: {
+                enabled: false
+            }
+            , plotOptions: {
+                series: {
+                    animation: {
+                        duration: 2000
+                        , easing: 'easeOutBounce'
+                    }
+                }
+            }
+            , xAxis: {
+                categories: ['Jonh Smith', 'Patric Stockhain', 'James McDonald', 'Francis Calder', 'Peter Rockstone']
+            }
+            , yAxis: {
+                title: {
+                    text: 'RFI #'
+                }
+            }
+            , series: [{
+                name: 'Average'
+                , data: [110, 213, 3322, 1110, 213]
+        }]
+        });
+    });
+</script></div>
     </div>
-    <div class="masonry-css-item"> <img src="http://placehold.it/300x600" class="" height="" width="" alt=""> </div>
-    <div class="masonry-css-item"> <img src="http://placehold.it/300x200" class="" height="" width="" alt=""> </div>
-    <div class="masonry-css-item">
-        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fugiat iusto blanditiis tenetur alias ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio beatae deserunt quisquam similique vitae hic eveniet, velit, natus unde tempora excepturi labore, veniam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-    </div>
-    <div class="masonry-css-item"> <img src="http://placehold.it/700x200" class="" height="" width="" alt=""> </div>
-    <div class="masonry-css-item"> <img src="http://placehold.it/350x400" class="" height="" width="" alt=""> </div>
-    <div class="masonry-css-item">
-        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labo?</div>
-    </div>
-    <div class="masonry-css-item">
-        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, la, consectetur adipisicing elit. Odio beatae deserunt quisquam similique vitae hic eveniet, velit, natus unde tempora excepturi labore, veniam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-    </div>
-    <div class="masonry-css-item"> <img src="http://placehold.it/450x400" class="" height="" width="" alt=""> </div>
-    <div class="masonry-css-item">
-        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-    </div>
-    <div class="masonry-css-item"> <img src="http://placehold.it/350x80" class="" height="" width="" alt=""> </div>
-    <div class="masonry-css-item"> <img src="http://placehold.it/400x400" class="" height="" width="" alt=""> </div>
-    <div class="masonry-css-item"> <img src="http://placehold.it/440x400" class="" height="" width="" alt=""> </div>
-    <div class="masonry-css-item">
-        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-    </div>
-    <div class="masonry-css-item">
-        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-    </div>
-    <div class="masonry-css-item">
-        <div class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam, corrupti, quis rem beatae quidem, labore, aspernatur nihil distinctio fugit sint facilis sunt eius fam necessitatibus. Vitae, magnam sequi. Veritatis, cumque, iste?</div>
-    </div>
+</div>
+<div class="grid-container">
+    <div class="grid-x grid-margin-x">
+        <div class="cell small-12">
+            <h4>Top overdue RFIs</h4> <div class="table-scroll">
+    <table id="example" class="display " cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>RFI #</th>
+                <th>Title</th>
+                <th>Code</th>
+                <th>Priority</th>
+                <th>Discipline</th>
+                <th>Date submitted</th>
+                <th>Date responded</th>
+                <th>Responded by</th>
+                <th>Action required</th>
+                <th>Action completed</th>
+                <th>Action confirmed</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+            <tr>
+                <td>3829383</td>
+                <td>RFI382938A33</td>
+                <td>A2</td>
+                <td><span class="alert">High</span></td>
+                <td>Pipping</td>
+                <td>2011/12/12</td>
+                <td>2011/12/12</td>
+                <td>John Smith</td>
+                <td>Yes</td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
+                <td class="td-tool"><a class="button clear"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+            </tr>
+        </tbody>
+    </table>
 </div> </div>
+    </div>--></div> </div>
     </div>
 </div> <div class="large reveal" id="formModal" data-reveal>
     <div class="top-bar fixed">
@@ -1092,7 +1269,7 @@
 </div> </div>
         </div>
     </div>
-</div> <footer>
+    <div class="cell footer"> <footer>
     <nav class="nav-footer">
         <ul>
             <li><a href="#">About</a></li>
@@ -1101,7 +1278,7 @@
             <li><a href="#">© 2017 Copyright: Tryst Canada Consultants Ltd.</a></li>
         </ul>
     </nav>
-</footer>
+</footer></div>
 
     <script src="assets/js/app.js"></script>
 </body>

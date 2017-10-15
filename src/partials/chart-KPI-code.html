@@ -1,0 +1,36 @@
+<div id="RFI_code" style="width:100%; height:200px;"></div>
+<script>
+    $(function () {
+        var myChart = Highcharts.chart('RFI_code', {
+            chart: {
+                type: 'column'
+            }
+            , title: {
+                text: 'RFI by Code'
+            }
+            , legend: {
+                enabled: false
+            }
+            , plotOptions: {
+                series: {
+                    animation: {
+                        duration: 2000
+                        , easing: 'easeOutBounce'
+                    }
+                }
+            }
+            , xAxis: {
+                categories: ['A1', 'A2', 'B1', 'B2', 'C1']
+            }
+            , yAxis: {
+                title: {
+                    text: 'RFI #'
+                }
+            }
+            , series: [{
+                name: 'Users'
+                , data: [1500, 213, 3322, 1110, 213]
+        }]
+        });
+    });
+</script>

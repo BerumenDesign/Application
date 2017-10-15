@@ -1,0 +1,58 @@
+<div id="RFI_discipline" style="width:100%; height:200px;"></div>
+<script>
+    $(function () {
+        var myChart = Highcharts.chart('RFI_discipline', {
+            chart: {
+                plotBackgroundColor: null
+                , plotBorderWidth: null
+                , plotShadow: false
+                , type: 'pie'
+            }
+            , title: {
+                text: 'RFI by Discipline'
+            }
+            , tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            }
+            , plotOptions: {
+                pie: {
+                    allowPointSelect: false
+                    , cursor: 'pointer'
+                    , dataLabels: {
+                        enabled: true
+                        , format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                        , style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+                , series: {
+                    animation: {
+                        duration: 2000
+                        , easing: 'easeOutBounce'
+                    }
+                }
+            }
+            , series: [{
+                name: 'Brands'
+                , colorByPoint: true
+                , data: [{
+                    name: 'Pipping'
+                    , y: 30
+        }, {
+                    name: 'Mech'
+                    , y: 20
+        }, {
+                    name: 'CSA'
+                    , y: 10
+        }, {
+                    name: 'Elec'
+                    , y: 35
+        }, {
+                    name: 'IRC'
+                    , y: 20
+        }]
+    }]
+        });
+    });
+</script>
