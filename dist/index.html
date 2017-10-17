@@ -13,8 +13,9 @@
     <script src="http://code.highcharts.com/highcharts.js"></script>
 </head>
 
-<body>  <div class="grid-y medium-grid-frame container-y">
-    <div class="cell shrink header medium-cell-block-container"> <div class="fixed">
+<body>  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="grid-y medium-grid-frame container-y">
+        <div class="cell shrink header medium-cell-block-container"> <div class="fixed">
     <nav class="top-bar" id="admin-menu">
         <button class="button secondary show-for-small-only" data-toggle="offCanvas"><i class="fa fa-bars" aria-hidden="true"></i></button>
         <nav class="top-bar-left">
@@ -47,9 +48,9 @@
         </div>
     </nav>
 </div> </div>
-    <div class="cell medium-auto medium-cell-block-container">
-        <div class="grid-x grid-padding-x">
-            <div class="cell medium-3 side-panel-rfi"> <div class="accordionRFI">
+        <div class="cell medium-auto medium-cell-block-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell medium-3 side-panel-rfi"> <div class="accordionRFI">
     <div class="grid-x all-projects">
         <div class="small-6">All projects</div>
         <div class="small-2 success"><i class="fa fa-flag" aria-hidden="true"></i></div>
@@ -191,7 +192,7 @@
             <label>RFI Outstanding actions tracker</label>
         </header><a href="#" class="button expanded wait-response">Actions<span class="has-action">6</span></a> <a href="#" class="button expanded wait-confirmation">Action confirmations<span class="has-action">6</span></a></div>
 </div> </div>
-            <div class="cell medium-9 cell-block-y main-panel-rfi"> <!--<div class="second-bar grid-x grid-padding-y">
+                <div class="cell medium-9 cell-block-y main-panel-rfi"> <!--<div class="second-bar grid-x grid-padding-y">
     <div class="hide-for-small-only medium-4">
         <h6>RFI Dashboard</h6> </div>
     <div class="right small-12 medium-offset-4 medium-4">
@@ -215,7 +216,7 @@
         <ul class="menu right">
             <li><a href="#" class="secondary clear button"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export log</a></li>
             <li><a href="#" class="secondary clear button"><i class="fa fa-print" aria-hidden="true"></i> Print</a></li>
-            <li><a href="#" class=" button small success white" data-toggle="formModal"><i class="fa fa-plus" aria-hidden="true" ></i> New RFI</a></li>
+            <li><a href="#" class=" button small success white" data-toggle="offCanvasRFI"><i class="fa fa-plus" aria-hidden="true" ></i> New RFI</a></li>
         </ul>
     </div>
 </div></div>
@@ -272,7 +273,7 @@
                 <td>Yes</td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                <td class="td-tool"><a class="button clear" type="button" data-toggle="offCanvasNestedPush"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+                <td class="td-tool"><a class="button clear" data-toggle="offCanvasRFI2"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
             </tr>
             <tr>
                 <td>3829383</td>
@@ -490,7 +491,7 @@
                 <td>Yes</td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                <td class="td-tool"><a class="button clear" type="button" data-toggle="offCanvasNestedPush"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+                <td class="td-tool"><a class="button clear" data-toggle="offCanvasRFI2"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
             </tr>
             <tr>
                 <td>3829383</td>
@@ -708,7 +709,7 @@
                 <td>Yes</td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
                 <td><i class="fa fa-check-circle success" aria-hidden="true"></i></td>
-                <td class="td-tool"><a class="button clear" type="button" data-toggle="offCanvasNestedPush"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
+                <td class="td-tool"><a class="button clear" data-toggle="offCanvasRFI2"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="button clear"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </td>
             </tr>
             <tr>
                 <td>3829383</td>
@@ -1267,9 +1268,9 @@
     </div>
 
 </div> </div>
+            </div>
         </div>
-    </div>
-    <div class="cell footer"> <footer>
+        <div class="cell footer"> <footer>
     <nav class="nav-footer">
         <ul>
             <li><a href="#">About</a></li>
@@ -1279,6 +1280,273 @@
         </ul>
     </nav>
 </footer></div>
+        <button type="button">Open Menu</button>
+    </div>
+</div>
+<!--This is where the off canvas slide ins start-->
+<div class="off-canvas position-right" id="offCanvasRFI" data-off-canvas>
+    <div id="formModal" style="width: 800px; background: #fff;"> <div class="top-bar fixed">
+    <div class="top-bar-left"><a class="button primary">Request</a></div>
+    <div class="top-bar-right"><a href="#" class="button secondary clear"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
+        <button class="button clear close-form" data-close aria-label="Close modal" type="button"> <span aria-hidden="true">&times;</span> </button>
+    </div>
+</div><div class="inside-modal"><div class="top-bar-left">
+    <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+            <li><a href="#">All projects </a></li>
+            <li><a href="#">Company 1</a></li>
+            <li> <a href="#">Project 1</a></li>
+        </ul>
+    </nav>
+</div>
+    <header>
+        <h3>Request for information</h3>
+        <p>by Tim Williams / Jul 21, 2017 13:01</p>
+    </header>
+</div><form>
+    <div class="grid-x grid-padding-x">
+        <label class="small-12 cell">Title
+            <input type="text" placeholder="RFI title"> </label>
+        <label class="small-4 cell">Plant <a class="right clear tool"><i class="fa fa-plus" aria-hidden="true"></i> Add Plant</a>
+            <select>
+                <option value="" class="secondary">Select </option>
+                <option value="discipline1">Plant 1</option>
+                <option value="discipline2">Plant 2</option>
+                <option value="discipline3">Plant 3</option>
+            </select>
+        </label>
+        <label class="small-4 cell">Discipline
+            <select>
+                <option value="" class="secondary">Select</option>
+                <option value="discipline1">Discipline 1</option>
+                <option value="discipline2">Discipline 2</option>
+                <option value="discipline3">Discipline 3</option>
+            </select>
+        </label>
+        <label class="small-4 cell">Tag
+            <input type="text" placeholder="Tag"> </label>
+        <label class="small-4 cell">RFI number
+            <input disabled type="text" placeholder="123-456"> </label>
+        <label class="small-4 cell">Assigned to
+            <input disabled type="text" placeholder="John Smith"> </label>
+        <label class="small-12 cell">Describe problem or requested info
+            <textarea name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
+        </label>
+        <label class="small-12 cell">Describe recomendation, proposal or suggested mitigation
+            <textarea name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
+        </label>
+        <label class="small-4 cell">Priority
+            <select>
+                <option value="high-priority"><i class="fa fa-circle alert" aria-hidden="true"></i> High Priority</option>
+                <option value="low-priority"><i class="fa fa-circle warning" aria-hidden="true"></i> Medium Priority</option>
+            </select>
+        </label>
+        <label class="small-8 cell">Justify priority
+            <textarea name="Text1" cols="40" rows="3" placeholder="Enter comment"></textarea>
+        </label>
+        <div class="small-6 cell">
+            <label>Upload reference document
+                <div class="upload-dropzone"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Drop files here
+                    <br>or click to select files</div>
+            </label>
+        </div>
+        <div class="small-6 cell">
+            <label>Uploaded document
+                <div class="uploaded-docs"> <a class="button clear secondary">RFI-33323232-3.pdf <i class="fa fa-trash" aria-hidden="true"></i></a> </div>
+            </label>
+        </div>
+        <div class="small-12cell end-form">
+            <div class="button-group"> <a class="hollow secondary button">Cancel</a> <a class="success button">Submit RFI</a> </div>
+        </div>
+    </div>
+</form> </div>
+</div>
+<div class="off-canvas position-right" id="offCanvasRFI2" data-off-canvas>
+    <div id="formModal2" style="width: 800px; background: #fff;"> <div class="top-bar fixed">
+    <div class="top-bar-left"><a class="button clear">Request</a><a class="button clear">Response</a><a class="button primary">Action Closure</a></div>
+    <div class="top-bar-right"> <span class="success">Status: Completed</span><a href="#" class="button secondary clear"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
+        <button class="button clear close-form" data-close aria-label="Close modal" type="button"> <span aria-hidden="true">&times;</span> </button>
+    </div>
+</div><div class="inside-modal"><div class="top-bar-left">
+    <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+            <li><a href="#">All projects </a></li>
+            <li><a href="#">Company 1</a></li>
+            <li> <a href="#">Project 1</a></li>
+        </ul>
+    </nav>
+</div>
+    <header>
+        <h3>Request for information</h3>
+        <p>by Tim Williams / Jul 21, 2017 13:01</p>
+    </header>
+</div><form>
+    <div class="grid-x grid-padding-x">
+        <label class="small-12 cell">Title
+            <input disabled type="text" placeholder="RFI title"> </label>
+        <label class="small-4 cell">Plant <a class="right clear tool"><i class="fa fa-plus" aria-hidden="true"></i> Add Plant</a>
+            <select disabled>
+                <option value="" class="secondary">Select </option>
+                <option value="discipline1">Plant 1</option>
+                <option value="discipline2">Plant 2</option>
+                <option value="discipline3">Plant 3</option>
+            </select>
+        </label>
+        <label class="small-4 cell">Discipline
+            <select disabled>
+                <option value="" class="secondary">Select</option>
+                <option value="discipline1">Discipline 1</option>
+                <option value="discipline2">Discipline 2</option>
+                <option value="discipline3">Discipline 3</option>
+            </select>
+        </label>
+        <label class="small-4 cell">Tag
+            <input disabled type="text" placeholder="Tag"> </label>
+        <label class="small-4 cell">RFI number
+            <input disabled type="text" placeholder="123-456"> </label>
+        <label class="small-4 cell">Assigned to
+            <input disabled type="text" placeholder="John Smith"> </label>
+        <label class="small-12 cell">Describe problem or requested info
+            <textarea disabled name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
+        </label>
+        <label class="small-12 cell">Describe recomendation, proposal or suggested mitigation
+            <textarea disabled name="Text1" cols="40" rows="5" placeholder="Enter comment"></textarea>
+        </label>
+        <label class="small-4 cell">Priority
+            <select disabled>
+                <option value="high-priority"><i class="fa fa-circle alert" aria-hidden="true"></i> High Priority</option>
+                <option value="low-priority"><i class="fa fa-circle warning" aria-hidden="true"></i> Medium Priority</option>
+            </select>
+        </label>
+        <label class="small-8 cell">Priority justification
+            <textarea disabled name="Text1" cols="40" rows="3" placeholder="Enter comment"></textarea>
+        </label>
+        <div class="small-8 cell">
+            <label>Uploaded document
+                <div class="uploaded-docs"> <a class="button clear secondary">RFI-33323232-3.pdf <i class="fa fa-trash" aria-hidden="true"></i></a> </div>
+            </label>
+        </div>
+        <div class="form-area">
+            <section class="grid-x grid-padding-x">
+                <div class="small-10 cell">
+                    <h4>Accept or Reject RFI</h4> <span>Does this RFI gives a clear description of the problem?
+            <div class="button-group"> <a class="hollow success button">Yes</a> <a class=" clear secondary button">No</a> </div>
+                </span> </div>
+            </section>
+        </div>
+        <div class="form-area">
+            <h4>Response</h4>
+            <p>by John Smith / Jul 23, 2017 13:01 </p>
+            <div class="grid-x grid-padding-x">
+                <label class="small-12 cell">Response
+                    <textarea disabled name="Response1" cols="40" rows="5" placeholder="Enter comment"></textarea>
+                </label>
+            </div>
+        </div>
+        <div class="form-area">
+            <section class="grid-x grid-padding-x">
+                <div class="small-7 cell"><span>RFI causes change on drawing?
+            <div class="button-group"> <a class="hollow success button">Yes</a> <a class="clear secondary button">No</a> </div>
+            </span> </div>
+                <div class="small-6 cell">
+                    <h5>List of changes</h5>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Drawing_#</th>
+                            <th>Rev_#</th>
+                            <th>Comment</th>
+                        </tr>
+                        <tr>
+                            <td>32423</td>
+                            <td>1</td>
+                            <td>Lorem Ipsum is simply dummy text of the printing and x industry.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="small-6 cell closed">
+                    <h5><i class="fa fa-check-circle" aria-hidden="true"></i> Action Closed <a class="right button clear secondary tool"><i class="fa fa-repeat" aria-hidden="true"></i> Undo</a> </h5>
+                    <label>Uploaded document
+                        <div class="uploaded-docs"> <a class="button clear secondary">RFI-33323232-3.pdf <i class="fa fa-trash" aria-hidden="true"></i></a> </div>
+                    </label>
+                    <label class="small-12 cell">Comments
+                        <textarea name="Response1" rows="2" placeholder="Enter comment"></textarea>
+                    </label>
+                </div>
+            </section>
+        </div>
+        <div class="form-area">
+            <section class="grid-x grid-padding-x">
+                <div class="small-7 cell"><span>Follow up documents required?
+            <div class="button-group"> <a class="hollow success button">Yes</a> <a class="clear secondary button">No</a> </div>
+            </span> </div>
+                <div class="small-6 cell">
+                    <h5>List of required documents</h5>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Drawing_#</th>
+                            <th>Document_#</th>
+                            <th>Comment</th>
+                        </tr>
+                        <tr>
+                            <td>32423</td>
+                            <td>1</td>
+                            <td>Lorem Ipsum is simply dummy text of the printing and x industry.</td>
+                        </tr>
+                        <tr>
+                            <td>32423</td>
+                            <td>1</td>
+                            <td>Lorem Ipsum is simply dummy text of the printing and x industry.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="small-6 cell closed">
+                    <h5><i class="fa fa-check-circle" aria-hidden="true"></i> Action Closed <a class="right button clear secondary tool"><i class="fa fa-repeat" aria-hidden="true"></i> Undo</a> </h5>
+                    <label>Uploaded document
+                        <div class="uploaded-docs"> <a class="button clear secondary">RFI-33323232-3.pdf <i class="fa fa-trash" aria-hidden="true"></i></a> </div>
+                    </label>
+                    <label class="small-12 cell">Comments
+                        <textarea name="Response1" rows="2" placeholder="Enter comment"></textarea>
+                    </label>
+                </div>
+            </section>
+        </div>
+        <div class="form-area">
+            <section class="grid-x grid-padding-x">
+                <div class="small-7 cell"><span>Assign other actions?
+            <div class="button-group"> <a class="hollow success button">Yes</a> <a class="clear secondary button">No</a> </div>
+            </span> </div>
+                <div class="small-6 cell">
+                    <h5>List of other actions</h5>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Describe_action</th>
+                            <th>Assigned_to</th>
+                            <th>Due_date</th>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum is simply dummy text of the printing</td>
+                            <td>John Smith</td>
+                            <td>Jul/28/2017</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="small-6 cell closed">
+                    <h5><i class="fa fa-check-circle" aria-hidden="true"></i> Action Closed <a class="right button clear secondary tool"><i class="fa fa-repeat" aria-hidden="true"></i> Undo</a> </h5>
+                    <label>Uploaded document
+                        <div class="uploaded-docs"> <a class="button clear secondary">RFI-33323232-3.pdf <i class="fa fa-trash" aria-hidden="true"></i></a> </div>
+                    </label>
+                    <label class="small-12 cell">Comments
+                        <textarea name="Response1" rows="2" placeholder="Enter comment"></textarea>
+                    </label>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="end-form">
+        <div class="button-group"> <a class="hollow secondary button">Cancel</a> <a class="success button">Save</a> </div>
+    </div>
+</form></div>
+</div>
 
     <script src="assets/js/app.js"></script>
 </body>

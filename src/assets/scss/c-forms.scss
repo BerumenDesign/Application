@@ -1,5 +1,5 @@
 .inside-modal {
-    padding: 0px 20px;
+    padding: 0px 30px;
     header {
         margin-left: 10px;
     }
@@ -9,7 +9,6 @@
         color: darken($primary-color, 20%);
     }
     .breadcrumbs {
-        margin-left: 10px;
         margin-bottom: 0;
     }
     .button-group {
@@ -45,7 +44,7 @@
         }
     }
     form {
-        margin: 10px;
+        margin: 0 30px;
     }
     h3,
     h4 {

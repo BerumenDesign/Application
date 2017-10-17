@@ -1,9 +1,20 @@
-<div class="grid-y medium-grid-frame container-y">
-    <div class="cell shrink header medium-cell-block-container"> {{> topbar}} </div>
-    <div class="cell medium-auto medium-cell-block-container">
-        <div class="grid-x grid-padding-x">
-            <div class="cell medium-3 side-panel-rfi"> {{> accordion}} </div>
-            <div class="cell medium-9 cell-block-y main-panel-rfi"> {{> secondbar}} {{> card_rfi}} </div>
+<div class="off-canvas-content" data-off-canvas-content>
+    <div class="grid-y medium-grid-frame container-y">
+        <div class="cell shrink header medium-cell-block-container"> {{> topbar}} </div>
+        <div class="cell medium-auto medium-cell-block-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell medium-3 side-panel-rfi"> {{> accordion}} </div>
+                <div class="cell medium-9 cell-block-y main-panel-rfi"> {{> secondbar}} {{> card_rfi}} </div>
+            </div>
         </div>
+        <div class="cell footer"> {{> footer}}</div>
+        <button type="button">Open Menu</button>
     </div>
-    <div class="cell footer"> {{> footer}}</div>
+</div>
+<!--This is where the off canvas slide ins start-->
+<div class="off-canvas position-right" id="offCanvasRFI" data-off-canvas>
+    <div id="formModal" style="width: 800px; background: #fff;"> {{> f-header}}{{> f-title}}{{> f-form}} </div>
+</div>
+<div class="off-canvas position-right" id="offCanvasRFI2" data-off-canvas>
+    <div id="formModal2" style="width: 800px; background: #fff;"> {{> f-header-5}}{{> f-title}}{{> f-form-5}}</div>
+</div>
