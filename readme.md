@@ -69,3 +69,9 @@ http://localhost:8000
 
 To create compressed, production-ready assets, run `npm run build`.
 # duckcreek-client
+
+## Current build
+
+Use Node.js 22.12 or newer. Run `npm ci`, then `npm run build` to generate `dist/`, or `npm start` for a local preview that rebuilds when source files change. The build reads `config.yml`, renders the existing Handlebars templates, compiles Sass, and bundles JavaScript. Chart and jQuery assets are served locally. Original images are copied without recompression.
+
+The obsolete Gulp/Panini/native Sass toolchain has been replaced; old Gulp-specific instructions above are historical. Dependencies are pinned by the lockfile.
